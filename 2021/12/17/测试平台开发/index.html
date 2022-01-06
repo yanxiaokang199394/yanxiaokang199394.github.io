@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>测试平台开发 | kane_space</title><meta name="keywords" content="flask,vue,python3"><meta name="author" content="kan_yan"><meta name="copyright" content="kan_yan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言1、为什么要做测试平台？ 市场需求：测试平台开发是目前行业中一个热门的技术，能为团队带来市场价值，比如wetest 公司需求：良好的测试平台能减轻公司内部的沟通成本  2、什么时候做测试平台？ 已有开源测试平台不能满足需求，不要轻易造轮子 公司内部测试体系、测试技术健全，构建平台可以带动整个团队甚至团队之外的其他团队的提升 需要公司级别的定制，整合公司内部多套平台  3、怎么做测试平台？ 拆分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="测试平台开发">
+<meta property="og:url" content="https://github.com/yanxiaokang199394/yanxiaokang199394.github.io.git/2021/12/17/%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/index.html">
+<meta property="og:site_name" content="kane_space">
+<meta property="og:description" content="前言1、为什么要做测试平台？ 市场需求：测试平台开发是目前行业中一个热门的技术，能为团队带来市场价值，比如wetest 公司需求：良好的测试平台能减轻公司内部的沟通成本  2、什么时候做测试平台？ 已有开源测试平台不能满足需求，不要轻易造轮子 公司内部测试体系、测试技术健全，构建平台可以带动整个团队甚至团队之外的其他团队的提升 需要公司级别的定制，整合公司内部多套平台  3、怎么做测试平台？ 拆分">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2021-12-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-06T07:46:44.130Z">
+<meta property="article:author" content="kan_yan">
+<meta property="article:tag" content="flask">
+<meta property="article:tag" content="vue">
+<meta property="article:tag" content="python3">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://github.com/yanxiaokang199394/yanxiaokang199394.github.io.git/2021/12/17/%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '测试平台开发',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-01-06 15:46:44'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">kane_space</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">测试平台开发</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-12-16T16:00:00.000Z" title="Created 2021-12-17 00:00:00">2021-12-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-01-06T07:46:44.130Z" title="Updated 2022-01-06 15:46:44">2022-01-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/">测试平台开发</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="测试平台开发"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><h5 id="1、为什么要做测试平台？"><a href="#1、为什么要做测试平台？" class="headerlink" title="1、为什么要做测试平台？"></a>1、为什么要做测试平台？</h5><ul>
+<li>市场需求：测试平台开发是目前行业中一个热门的技术，能为团队带来市场价值，比如wetest</li>
+<li>公司需求：良好的测试平台能减轻公司内部的沟通成本</li>
+</ul>
+<h5 id="2、什么时候做测试平台？"><a href="#2、什么时候做测试平台？" class="headerlink" title="2、什么时候做测试平台？"></a>2、什么时候做测试平台？</h5><ul>
+<li>已有开源测试平台不能满足需求，不要轻易造轮子</li>
+<li>公司内部测试体系、测试技术健全，构建平台可以带动整个团队甚至团队之外的其他团队的提升</li>
+<li>需要公司级别的定制，整合公司内部多套平台</li>
+</ul>
+<h5 id="3、怎么做测试平台？"><a href="#3、怎么做测试平台？" class="headerlink" title="3、怎么做测试平台？"></a>3、怎么做测试平台？</h5><ul>
+<li>拆分平台功能：</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/06/cnjxuGWr5PUbm6A.png" alt="image-20220105144819087"></p>
+<h4 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h4><h5 id="常用的技术框架与组件"><a href="#常用的技术框架与组件" class="headerlink" title="常用的技术框架与组件"></a>常用的技术框架与组件</h5><ul>
+<li>前端：bootstrap、vue、react</li>
+<li>后端：django、flask、spring boot(java)</li>
+<li>数据库：mysql、es</li>
+<li>任务调度：jenkins</li>
+<li>数据报表：echarts、vega、kibana、grafana、allure</li>
+</ul>
+<h5 id="选择框架：vue-flask-mysql-jenkins-allure"><a href="#选择框架：vue-flask-mysql-jenkins-allure" class="headerlink" title="选择框架：vue+flask+mysql+jenkins+allure"></a>选择框架：vue+flask+mysql+jenkins+allure</h5><p><img src="https://s2.loli.net/2022/01/06/EAxpQTNLCfSkYot.png" alt="image-20220105153815110"></p>
+<h4 id="flask基础"><a href="#flask基础" class="headerlink" title="flask基础"></a>flask基础</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 导入Flask</span></span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line"><span class="comment"># 实例化flask</span></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"><span class="comment"># 定义路由地址，以及请求方式 methods的值传入list</span></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&quot;/testcase&quot;</span>,methods=[<span class="string">&#x27;post&#x27;</span>]</span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_case</span>():</span></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">&quot;status&quot;</span>:<span class="string">&quot;1&quot;</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&quot;/testcase&quot;</span>,methods=[<span class="string">&#x27;get&#x27;</span>]</span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_case</span>():</span></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">&quot;status&quot;</span>:<span class="string">&quot;1&quot;</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&quot;/testcase&quot;</span>,methods=[<span class="string">&#x27;put&#x27;</span>]</span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">modify_case</span>():</span></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">&quot;status&quot;</span>:<span class="string">&quot;1&quot;</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&quot;/testcase&quot;</span>,methods=[<span class="string">&#x27;delete&#x27;</span>]</span>)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">del_case</span>():</span></span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">&quot;status&quot;</span>:<span class="string">&quot;1&quot;</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment"># debug=True调试模式，热加载，方便测试</span></span><br><span class="line">    app.run(debug=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>测试驱动开发模式，没写一个功能模块，就编写一个test自测，提升平台的健壮性</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">kan_yan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://github.com/yanxiaokang199394/yanxiaokang199394.github.io.git/2021/12/17/%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/">https://github.com/yanxiaokang199394/yanxiaokang199394.github.io.git/2021/12/17/%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/flask/">flask</a><a class="post-meta__tags" href="/tags/vue/">vue</a><a class="post-meta__tags" href="/tags/python3/">python3</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/12/17/docker%E5%AE%9E%E6%88%98/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">selenium grid实战</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">kan_yan</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%81%9A%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">1、为什么要做测试平台？</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2%E3%80%81%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%81%9A%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">2、什么时候做测试平台？</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3%E3%80%81%E6%80%8E%E4%B9%88%E5%81%9A%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%EF%BC%9F"><span class="toc-number">1.3.</span> <span class="toc-text">3、怎么做测试平台？</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="toc-number">2.</span> <span class="toc-text">架构设计</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6%E4%B8%8E%E7%BB%84%E4%BB%B6"><span class="toc-number">2.1.</span> <span class="toc-text">常用的技术框架与组件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%A1%86%E6%9E%B6%EF%BC%9Avue-flask-mysql-jenkins-allure"><span class="toc-number">2.2.</span> <span class="toc-text">选择框架：vue+flask+mysql+jenkins+allure</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flask%E5%9F%BA%E7%A1%80"><span class="toc-number">3.</span> <span class="toc-text">flask基础</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/12/17/%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/" title="测试平台开发"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="测试平台开发"/></a><div class="content"><a class="title" href="/2021/12/17/%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91/" title="测试平台开发">测试平台开发</a><time datetime="2021-12-16T16:00:00.000Z" title="Created 2021-12-17 00:00:00">2021-12-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/17/docker%E5%AE%9E%E6%88%98/" title="selenium grid实战"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="selenium grid实战"/></a><div class="content"><a class="title" href="/2021/12/17/docker%E5%AE%9E%E6%88%98/" title="selenium grid实战">selenium grid实战</a><time datetime="2021-12-16T16:00:00.000Z" title="Created 2021-12-17 00:00:00">2021-12-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/15/docker%E5%9F%BA%E7%A1%80/" title="docker基础"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="docker基础"/></a><div class="content"><a class="title" href="/2021/12/15/docker%E5%9F%BA%E7%A1%80/" title="docker基础">docker基础</a><time datetime="2021-12-14T16:00:00.000Z" title="Created 2021-12-15 00:00:00">2021-12-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/11/17/pytest%E6%A1%86%E6%9E%B6/" title="pytest框架"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pytest框架"/></a><div class="content"><a class="title" href="/2021/11/17/pytest%E6%A1%86%E6%9E%B6/" title="pytest框架">pytest框架</a><time datetime="2021-11-16T16:00:00.000Z" title="Created 2021-11-17 00:00:00">2021-11-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By kan_yan</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
