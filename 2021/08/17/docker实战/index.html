@@ -5,15 +5,24 @@
   
 
   
-  <title>Hexo</title>
+  <title>docker实战 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://github.com/yanxiaokang199394/yanxiaokang199394.github.io.git/index.html">
+  <meta name="description" content="1、selenium grid分布式UI自动化简介selenium团队开发出的一款工具，本身是为浏览器兼容而生，但是又能很好的支持用例的分布式执行 分布式概念1、由一个主hub节点接受需要执行用例的命令，然后主hub节点根据内置的规则分配给若干个node代理节点去调用浏览器来执行 2、用例执行采用先进先出的原则，如果浏览器不足时，未分配到的用例等待先分配的用例执行完成后，再去执行  grid3搭建">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker实战">
+<meta property="og:url" content="https://github.com/yanxiaokang199394/yanxiaokang199394.github.io.git/2021/08/17/docker%E5%AE%9E%E6%88%98/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1、selenium grid分布式UI自动化简介selenium团队开发出的一款工具，本身是为浏览器兼容而生，但是又能很好的支持用例的分布式执行 分布式概念1、由一个主hub节点接受需要执行用例的命令，然后主hub节点根据内置的规则分配给若干个node代理节点去调用浏览器来执行 2、用例执行采用先进先出的原则，如果浏览器不足时，未分配到的用例等待先分配的用例执行完成后，再去执行  grid3搭建">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/Users/yanxiaokang/Documents/%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98%E7%AC%94%E8%AE%B0/image-20220103142306768.png">
+<meta property="og:image" content="https://github.com/Users/yanxiaokang/Documents/%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98%E7%AC%94%E8%AE%B0/docker0%E7%BD%91%E6%A1%A5.png">
+<meta property="og:image" content="https://github.com/Users/yanxiaokang/Documents/%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98%E7%AC%94%E8%AE%B0/%E5%A4%96%E9%83%A8%E9%80%9A%E8%AE%AF.png">
+<meta property="article:published_time" content="2021-08-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-06T05:24:02.900Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="docker">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Users/yanxiaokang/Documents/%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98%E7%AC%94%E8%AE%B0/image-20220103142306768.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,58 +71,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/01/06/hello-world/" class="article-date">
-  <time datetime="2022-01-06T01:35:33.991Z" itemprop="datePublished">2022-01-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/01/06/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/yanxiaokang199394/yanxiaokang199394.github.io.git/2022/01/06/hello-world/" data-id="cky2iyfxl0005vxsmdovf1lrk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docker实战" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-docker实战" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/08/17/docker%E5%AE%9E%E6%88%98/" class="article-date">
   <time datetime="2021-08-16T16:00:00.000Z" itemprop="datePublished">2021-08-17</time>
@@ -130,8 +88,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/17/docker%E5%AE%9E%E6%88%98/">docker实战</a>
+    <h1 class="article-title" itemprop="name">
+      docker实战
     </h1>
   
 
@@ -205,11 +163,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2022/01/06/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
