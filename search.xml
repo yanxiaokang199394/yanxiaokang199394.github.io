@@ -4,35 +4,6 @@
   
     
     <entry>
-      <title>接口api基础</title>
-      <link href="/2022/01/15/2021-01-15-%E6%8E%A5%E5%8F%A3api%E5%9F%BA%E7%A1%80/"/>
-      <url>/2022/01/15/2021-01-15-%E6%8E%A5%E5%8F%A3api%E5%9F%BA%E7%A1%80/</url>
-      
-        <content type="html"><![CDATA[<h4 id="get与post"><a href="#get与post" class="headerlink" title="get与post"></a>get与post</h4><ul><li>get是向服务端请求数据，post则是向服务端提交数据</li><li>get请求的url中传送的参数是有长度限制的，而post没有限制</li><li>post比get要安全，因为get请求参数直接暴露在url上，而post在body中</li></ul><h4 id="cookie、session与token"><a href="#cookie、session与token" class="headerlink" title="cookie、session与token"></a>cookie、session与token</h4><ul><li>cookie：浏览器接受服务器的set-cookie指令，并把cookie保存在电脑上，每个网站保存的cookie只作用于自己的网站</li><li>session：数据存储在服务端，只把关联数据的一个加密串放在cookie中标记</li><li>token：用户请求时附带的请求字段，用于验证身份与权限</li></ul><h4 id="常见的错误码"><a href="#常见的错误码" class="headerlink" title="常见的错误码"></a>常见的错误码</h4><ul><li>200：请求成功</li><li>301：重定向</li><li>404：请求资源不存在</li><li>500：服务端错误</li></ul><h4 id="协议代理工具"><a href="#协议代理工具" class="headerlink" title="协议代理工具"></a>协议代理工具</h4><h5 id="postman主要功能"><a href="#postman主要功能" class="headerlink" title="postman主要功能"></a>postman主要功能</h5><ul><li><p>设置cookie</p></li><li><p>接口断言</p></li><li><p>参数之间的传递</p></li><li><p>数据驱动</p></li><li><p>设置变量</p></li></ul><h5 id="curl命令"><a href="#curl命令" class="headerlink" title="curl命令"></a>curl命令</h5><ul><li>将请求真实的还原出来</li><li>自带认证信息，脱离浏览器直接执行</li><li>方便重新执行，修改调试参数，修改脚本</li></ul><h6 id="curl相关命令参数：https-ceshiren-com-t-topic-1065"><a href="#curl相关命令参数：https-ceshiren-com-t-topic-1065" class="headerlink" title="curl相关命令参数：https://ceshiren.com/t/topic/1065"></a>curl相关命令参数：<a href="https://ceshiren.com/t/topic/1065">https://ceshiren.com/t/topic/1065</a></h6><h5 id="mitmproxy"><a href="#mitmproxy" class="headerlink" title="mitmproxy"></a>mitmproxy</h5><h6 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line">pip install mitmproxy==5.2.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证安装</span></span><br><span class="line">mitmproxy --version</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定端口8999启动</span></span><br><span class="line"><span class="comment"># 本机wifi设置中勾线代理，并开启http、https代理指定8999端口</span></span><br><span class="line">mitmproxy -p 8999 </span><br><span class="line"></span><br><span class="line"><span class="comment"># 浏览器输入mitm.it，安装证书，安装完成后设置始终信任证书</span></span><br></pre></td></tr></table></figure><h6 id="mitmproxy-mock实战"><a href="#mitmproxy-mock实战" class="headerlink" title="mitmproxy mock实战"></a>mitmproxy mock实战</h6><blockquote><p>主要包含三大组件：mitmproxy、mitmweb、mitmdump</p></blockquote><ul><li>实现maplocal</li><li>实现rewrite</li></ul><h5 id="charles"><a href="#charles" class="headerlink" title="charles"></a>charles</h5><h6 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h6><ul><li>抓包端口确认，打开proxy settings，查看端口</li></ul><p><img src="https://s2.loli.net/2022/01/15/X9CpITVWoSOuPUY.png" alt="image-20220115134037925"></p><ul><li>本地证书安装，始终信任</li></ul><p><img src="https://s2.loli.net/2022/01/15/91Dm4UwcdN3K6yb.png" alt="image-20220115134123246"></p><ul><li>charles ssl proxying settings 设置https端口号443</li></ul><p><img src="https://s2.loli.net/2022/01/15/XPu5kodcfAmJR6s.png" alt="image-20220115134207103"></p><h6 id="移动端配置"><a href="#移动端配置" class="headerlink" title="移动端配置"></a>移动端配置</h6><ul><li>统一wifi下，修改wifi设置，添加代理服务器</li><li>浏览器输入chls.pro/ssl，安装证书</li><li>charles弹窗点击allow</li></ul><h6 id="移动端注意"><a href="#移动端注意" class="headerlink" title="移动端注意"></a>移动端注意</h6><ul><li>安卓6.0以上，不支持证书安装</li><li>IOS10.0以上需要手动信任证书</li></ul><h6 id="rewrite"><a href="#rewrite" class="headerlink" title="rewrite"></a>rewrite</h6><ul><li>charles可以修改请求参数或者修改响应数据</li><li>动态修改响应数据</li><li>解决跨域问题</li></ul><p><img src="https://s2.loli.net/2022/01/15/jwEol98BWzOxcaJ.png" alt="image-20220115134314156"></p><h6 id="map-local"><a href="#map-local" class="headerlink" title="map local"></a>map local</h6><ul><li>客户端发起请求，charles接受后不发送给服务端，而是直接返回一个本地文件当做响应数据</li><li>修改一些复杂的响应数据时使用</li></ul><p><img src="https://s2.loli.net/2022/01/15/BiUTpMZldV6R5A4.png" alt="image-20220115134351624"></p><h6 id="map-remote"><a href="#map-remote" class="headerlink" title="map remote"></a>map remote</h6><ul><li>将原本需要请求服务端A的请求转发至服务端B，转发请求</li><li>多套测试环境切换时可以使用</li></ul><p><img src="https://s2.loli.net/2022/01/15/UqrIBj7EJgda3Oz.png" alt="image-20220115134525454"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 接口 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> charles </tag>
-            
-            <tag> curl </tag>
-            
-            <tag> postman </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>接口自动化</title>
       <link href="/2022/01/15/2021-12-17-%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
       <url>/2022/01/15/2021-12-17-%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
@@ -79,6 +50,35 @@
             <tag> linux </tag>
             
             <tag> bash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>接口api基础</title>
+      <link href="/2022/01/15/2021-01-15-%E6%8E%A5%E5%8F%A3api%E5%9F%BA%E7%A1%80/"/>
+      <url>/2022/01/15/2021-01-15-%E6%8E%A5%E5%8F%A3api%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h4 id="get与post"><a href="#get与post" class="headerlink" title="get与post"></a>get与post</h4><ul><li>get是向服务端请求数据，post则是向服务端提交数据</li><li>get请求的url中传送的参数是有长度限制的，而post没有限制</li><li>post比get要安全，因为get请求参数直接暴露在url上，而post在body中</li></ul><h4 id="cookie、session与token"><a href="#cookie、session与token" class="headerlink" title="cookie、session与token"></a>cookie、session与token</h4><ul><li>cookie：浏览器接受服务器的set-cookie指令，并把cookie保存在电脑上，每个网站保存的cookie只作用于自己的网站</li><li>session：数据存储在服务端，只把关联数据的一个加密串放在cookie中标记</li><li>token：用户请求时附带的请求字段，用于验证身份与权限</li></ul><h4 id="常见的错误码"><a href="#常见的错误码" class="headerlink" title="常见的错误码"></a>常见的错误码</h4><ul><li>200：请求成功</li><li>301：重定向</li><li>404：请求资源不存在</li><li>500：服务端错误</li></ul><h4 id="协议代理工具"><a href="#协议代理工具" class="headerlink" title="协议代理工具"></a>协议代理工具</h4><h5 id="postman主要功能"><a href="#postman主要功能" class="headerlink" title="postman主要功能"></a>postman主要功能</h5><ul><li><p>设置cookie</p></li><li><p>接口断言</p></li><li><p>参数之间的传递</p></li><li><p>数据驱动</p></li><li><p>设置变量</p></li></ul><h5 id="curl命令"><a href="#curl命令" class="headerlink" title="curl命令"></a>curl命令</h5><ul><li>将请求真实的还原出来</li><li>自带认证信息，脱离浏览器直接执行</li><li>方便重新执行，修改调试参数，修改脚本</li></ul><h6 id="curl相关命令参数：https-ceshiren-com-t-topic-1065"><a href="#curl相关命令参数：https-ceshiren-com-t-topic-1065" class="headerlink" title="curl相关命令参数：https://ceshiren.com/t/topic/1065"></a>curl相关命令参数：<a href="https://ceshiren.com/t/topic/1065">https://ceshiren.com/t/topic/1065</a></h6><h5 id="mitmproxy"><a href="#mitmproxy" class="headerlink" title="mitmproxy"></a>mitmproxy</h5><h6 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line">pip install mitmproxy==5.2.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证安装</span></span><br><span class="line">mitmproxy --version</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定端口8999启动</span></span><br><span class="line"><span class="comment"># 本机wifi设置中勾线代理，并开启http、https代理指定8999端口</span></span><br><span class="line">mitmproxy -p 8999 </span><br><span class="line"></span><br><span class="line"><span class="comment"># 浏览器输入mitm.it，安装证书，安装完成后设置始终信任证书</span></span><br></pre></td></tr></table></figure><h6 id="mitmproxy-mock实战"><a href="#mitmproxy-mock实战" class="headerlink" title="mitmproxy mock实战"></a>mitmproxy mock实战</h6><blockquote><p>主要包含三大组件：mitmproxy、mitmweb、mitmdump</p></blockquote><ul><li>实现maplocal</li><li>实现rewrite</li></ul><h5 id="charles"><a href="#charles" class="headerlink" title="charles"></a>charles</h5><h6 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h6><ul><li>抓包端口确认，打开proxy settings，查看端口</li></ul><p><img src="https://s2.loli.net/2022/01/15/X9CpITVWoSOuPUY.png" alt="image-20220115134037925"></p><ul><li>本地证书安装，始终信任</li></ul><p><img src="https://s2.loli.net/2022/01/15/91Dm4UwcdN3K6yb.png" alt="image-20220115134123246"></p><ul><li>charles ssl proxying settings 设置https端口号443</li></ul><p><img src="https://s2.loli.net/2022/01/15/XPu5kodcfAmJR6s.png" alt="image-20220115134207103"></p><h6 id="移动端配置"><a href="#移动端配置" class="headerlink" title="移动端配置"></a>移动端配置</h6><ul><li>统一wifi下，修改wifi设置，添加代理服务器</li><li>浏览器输入chls.pro/ssl，安装证书</li><li>charles弹窗点击allow</li></ul><h6 id="移动端注意"><a href="#移动端注意" class="headerlink" title="移动端注意"></a>移动端注意</h6><ul><li>安卓6.0以上，不支持证书安装</li><li>IOS10.0以上需要手动信任证书</li></ul><h6 id="rewrite"><a href="#rewrite" class="headerlink" title="rewrite"></a>rewrite</h6><ul><li>charles可以修改请求参数或者修改响应数据</li><li>动态修改响应数据</li><li>解决跨域问题</li></ul><p><img src="https://s2.loli.net/2022/01/15/jwEol98BWzOxcaJ.png" alt="image-20220115134314156"></p><h6 id="map-local"><a href="#map-local" class="headerlink" title="map local"></a>map local</h6><ul><li>客户端发起请求，charles接受后不发送给服务端，而是直接返回一个本地文件当做响应数据</li><li>修改一些复杂的响应数据时使用</li></ul><p><img src="https://s2.loli.net/2022/01/15/BiUTpMZldV6R5A4.png" alt="image-20220115134351624"></p><h6 id="map-remote"><a href="#map-remote" class="headerlink" title="map remote"></a>map remote</h6><ul><li>将原本需要请求服务端A的请求转发至服务端B，转发请求</li><li>多套测试环境切换时可以使用</li></ul><p><img src="https://s2.loli.net/2022/01/15/UqrIBj7EJgda3Oz.png" alt="image-20220115134525454"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 接口 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> charles </tag>
+            
+            <tag> curl </tag>
+            
+            <tag> postman </tag>
             
         </tags>
       
@@ -191,33 +191,6 @@
     
     
     <entry>
-      <title>测试平台-前端基础</title>
-      <link href="/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-      <url>/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/</url>
-      
-        <content type="html"><![CDATA[<h4 id="Vue-js介绍"><a href="#Vue-js介绍" class="headerlink" title="Vue.js介绍"></a>Vue.js介绍</h4><ul><li>是一套用于构建用户界面的渐进式框架</li><li>被设计成自底向上逐层应用</li><li>的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合</li><li>学习Vue.js需要一定的html、css和JavaScript基础</li></ul><h5 id="MVVM模式"><a href="#MVVM模式" class="headerlink" title="MVVM模式"></a>MVVM模式</h5><p><img src="https://s2.loli.net/2022/01/13/n7MpjxVhidOLU53.png" alt="image-20220113142654911"></p><ul><li>DOM：用户能看到的部分，与用户交互的部分</li><li>Model：存储数据的层，后端返回的数据以及用户请求的数据都存在model层</li><li>Vue层：dom层与model层之间的交互中转</li></ul><h5 id="Vue组件化开发"><a href="#Vue组件化开发" class="headerlink" title="Vue组件化开发"></a>Vue组件化开发</h5><ul><li>将页面拆分为多个组件，每个组件依赖的css、js、模板、图片等资源放在一起维护</li><li>因为组件是资源独立的，所以在系统内部可复用，组件与组件之间可以嵌套</li></ul><h5 id="组件库使用"><a href="#组件库使用" class="headerlink" title="组件库使用"></a>组件库使用</h5><ul><li>ElememtUI</li><li>BootstrapVue</li><li>Vuetify</li></ul><h5 id="Vue-js安装"><a href="#Vue-js安装" class="headerlink" title="Vue.js安装"></a>Vue.js安装</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm方式安装，需要依赖node环境</span></span><br><span class="line">npm install vue</span><br></pre></td></tr></table></figure><h5 id="Vue的内部指令"><a href="#Vue的内部指令" class="headerlink" title="Vue的内部指令"></a>Vue的内部指令</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 元素是否存在</span><br><span class="line">v-if v-else</span><br><span class="line"># 元素是否显示</span><br><span class="line">v-show</span><br><span class="line"># 循环</span><br><span class="line">v-for</span><br><span class="line"># 绑定事件</span><br><span class="line">v-on</span><br><span class="line"># 绑定属性</span><br><span class="line">v-bind</span><br><span class="line"># 绑定数据</span><br><span class="line">v-model</span><br></pre></td></tr></table></figure><h5 id="vue的生命周期"><a href="#vue的生命周期" class="headerlink" title="vue的生命周期"></a>vue的生命周期</h5><ul><li>钩子函数的使用</li></ul><h4 id="Vue项目实践"><a href="#Vue项目实践" class="headerlink" title="Vue项目实践"></a>Vue项目实践</h4><h5 id="Vue-cli安装"><a href="#Vue-cli安装" class="headerlink" title="Vue-cli安装"></a>Vue-cli安装</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vue-cli基于webpack构建，并带有合理的默认配置</span></span><br><span class="line"><span class="comment"># webpack是一个JavaScript应用程序的静态模块打包器</span></span><br><span class="line">npm install vue-cli -g</span><br><span class="line"><span class="comment"># 验证版本</span></span><br><span class="line">vue -V</span><br></pre></td></tr></table></figure><h5 id="图形化配置项目"><a href="#图形化配置项目" class="headerlink" title="图形化配置项目"></a>图形化配置项目</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打开vue项目管理器</span></span><br><span class="line">vue ui</span><br><span class="line"><span class="comment"># 如果上面命令没有反应，tian</span></span><br><span class="line">cnpm i -g @vue/cli</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> python3 </tag>
-            
-            <tag> Vue.js </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>测试平台-后端基础</title>
       <link href="/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
       <url>/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/</url>
@@ -237,6 +210,33 @@
             <tag> python3 </tag>
             
             <tag> flask </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试平台-前端基础</title>
+      <link href="/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+      <url>/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Vue-js介绍"><a href="#Vue-js介绍" class="headerlink" title="Vue.js介绍"></a>Vue.js介绍</h4><ul><li>是一套用于构建用户界面的渐进式框架</li><li>被设计成自底向上逐层应用</li><li>的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合</li><li>学习Vue.js需要一定的html、css和JavaScript基础</li></ul><h5 id="MVVM模式"><a href="#MVVM模式" class="headerlink" title="MVVM模式"></a>MVVM模式</h5><p><img src="https://s2.loli.net/2022/01/13/n7MpjxVhidOLU53.png" alt="image-20220113142654911"></p><ul><li>DOM：用户能看到的部分，与用户交互的部分</li><li>Model：存储数据的层，后端返回的数据以及用户请求的数据都存在model层</li><li>Vue层：dom层与model层之间的交互中转</li></ul><h5 id="Vue组件化开发"><a href="#Vue组件化开发" class="headerlink" title="Vue组件化开发"></a>Vue组件化开发</h5><ul><li>将页面拆分为多个组件，每个组件依赖的css、js、模板、图片等资源放在一起维护</li><li>因为组件是资源独立的，所以在系统内部可复用，组件与组件之间可以嵌套</li></ul><h5 id="组件库使用"><a href="#组件库使用" class="headerlink" title="组件库使用"></a>组件库使用</h5><ul><li>ElememtUI</li><li>BootstrapVue</li><li>Vuetify</li></ul><h5 id="Vue-js安装"><a href="#Vue-js安装" class="headerlink" title="Vue.js安装"></a>Vue.js安装</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm方式安装，需要依赖node环境</span></span><br><span class="line">npm install vue</span><br></pre></td></tr></table></figure><h5 id="Vue的内部指令"><a href="#Vue的内部指令" class="headerlink" title="Vue的内部指令"></a>Vue的内部指令</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 元素是否存在</span><br><span class="line">v-if v-else</span><br><span class="line"># 元素是否显示</span><br><span class="line">v-show</span><br><span class="line"># 循环</span><br><span class="line">v-for</span><br><span class="line"># 绑定事件</span><br><span class="line">v-on</span><br><span class="line"># 绑定属性</span><br><span class="line">v-bind</span><br><span class="line"># 绑定数据</span><br><span class="line">v-model</span><br></pre></td></tr></table></figure><h5 id="vue的生命周期"><a href="#vue的生命周期" class="headerlink" title="vue的生命周期"></a>vue的生命周期</h5><ul><li>钩子函数的使用</li></ul><h4 id="Vue项目实践"><a href="#Vue项目实践" class="headerlink" title="Vue项目实践"></a>Vue项目实践</h4><h5 id="Vue-cli安装"><a href="#Vue-cli安装" class="headerlink" title="Vue-cli安装"></a>Vue-cli安装</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vue-cli基于webpack构建，并带有合理的默认配置</span></span><br><span class="line"><span class="comment"># webpack是一个JavaScript应用程序的静态模块打包器</span></span><br><span class="line">npm install vue-cli -g</span><br><span class="line"><span class="comment"># 验证版本</span></span><br><span class="line">vue -V</span><br></pre></td></tr></table></figure><h5 id="图形化配置项目"><a href="#图形化配置项目" class="headerlink" title="图形化配置项目"></a>图形化配置项目</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打开vue项目管理器</span></span><br><span class="line">vue ui</span><br><span class="line"><span class="comment"># 如果上面命令没有反应，tian</span></span><br><span class="line">cnpm i -g @vue/cli</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python3 </tag>
+            
+            <tag> Vue.js </tag>
             
         </tags>
       
@@ -290,7 +290,7 @@
             
             <tag> flask </tag>
             
-            <tag> vue </tag>
+            <tag> Vue.js </tag>
             
         </tags>
       
