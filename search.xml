@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>WEditor工具安装</title>
+      <link href="/2022/01/16/2022-1-16-WEditor%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/"/>
+      <url>/2022/01/16/2022-1-16-WEditor%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装uiautomator2</span></span><br><span class="line">pip install --pre -U uiautomator2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装weditor</span></span><br><span class="line">pip install weditor</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化手机设备环境</span></span><br><span class="line">python -m uiautomator2 init <span class="comment"># 手机出现ATX小汽车app</span></span><br></pre></td></tr></table></figure><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m weditor</span><br></pre></td></tr></table></figure><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>安装完weditor后，手机上自动安装的ATX软件会跟appium起冲突</li><li>运行appium时需要把ATX软件卸载</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 自动化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python3 </tag>
+            
+            <tag> appium </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>appium</title>
       <link href="/2022/01/16/2022-1-16-appium/"/>
       <url>/2022/01/16/2022-1-16-appium/</url>
@@ -23,6 +50,33 @@
             <tag> python3 </tag>
             
             <tag> appium </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>adb</title>
+      <link href="/2022/01/15/2022-1-15-adb/"/>
+      <url>/2022/01/15/2022-1-15-adb/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Adb环境搭建准备"><a href="#Adb环境搭建准备" class="headerlink" title="Adb环境搭建准备"></a>Adb环境搭建准备</h3><h4 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h4><h4 id="安装SDK"><a href="#安装SDK" class="headerlink" title="安装SDK"></a>安装SDK</h4><h4 id="验证环境"><a href="#验证环境" class="headerlink" title="验证环境"></a>验证环境</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb version</span><br></pre></td></tr></table></figure><h4 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h4><h5 id="模拟器"><a href="#模拟器" class="headerlink" title="模拟器"></a>模拟器</h5><ul><li>根据模拟器提供的官方文档进行adb连接</li></ul><h5 id="真机"><a href="#真机" class="headerlink" title="真机"></a>真机</h5><ul><li>usb</li><li>开启开发者模式</li><li>删除手机助手类软件</li></ul><h3 id="adb基础"><a href="#adb基础" class="headerlink" title="adb基础"></a>adb基础</h3><h4 id="adb介绍"><a href="#adb介绍" class="headerlink" title="adb介绍"></a>adb介绍</h4><blockquote><p>全称android debug bridge，安卓调试桥，是android环境提供的命令行工具，用户可以通过adb在电脑上对Android设备进行全面操作，比如安装和调试应用，操作文件的传输等</p></blockquote><h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重启服务</span></span><br><span class="line">adb kill-server</span><br><span class="line">adb start-server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看设备状态</span></span><br><span class="line">adb devices    <span class="comment"># device正常；offline设备无响应；unauthorized未授权</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装应用</span></span><br><span class="line">adb install 包路径</span><br><span class="line">adb install -r 包路径   <span class="comment"># 覆盖安装</span></span><br><span class="line">adb -s 设备名 install 包路径  <span class="comment"># 指定设备安装</span></span><br><span class="line"><span class="comment"># 卸载应用</span></span><br><span class="line">adb uninstall 包路径</span><br><span class="line">adb uninstall -k 包路径    <span class="comment"># 卸载包不删除配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前已打开的应用包名</span></span><br><span class="line">adb shell dumpsys window w |grep \/ |grep name=</span><br><span class="line"><span class="comment"># 快速启动app</span></span><br><span class="line">adb shell am start -n 包名</span><br><span class="line"><span class="comment"># 清理缓存</span></span><br><span class="line">adb shell pm clear 包名</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="进阶命令"><a href="#进阶命令" class="headerlink" title="进阶命令"></a>进阶命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设备与电脑传输文件</span></span><br><span class="line">adb push 电脑路径 设备路径   <span class="comment"># 电脑--&gt;设备</span></span><br><span class="line">adb pull 设备路径 电脑路径   <span class="comment"># 设备--&gt;电脑</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看系统日志</span></span><br><span class="line">adb logcat -v time &gt;.\longcat.log</span><br><span class="line"><span class="comment"># 清理日志</span></span><br><span class="line">adb logcat -c</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> adb </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> adb </tag>
+            
+            <tag> android </tag>
             
         </tags>
       
@@ -60,60 +114,6 @@
     
     
     <entry>
-      <title>接口自动化</title>
-      <link href="/2022/01/15/2021-12-17-%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-      <url>/2022/01/15/2021-12-17-%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
-      
-        <content type="html"><![CDATA[<h3 id="接口自动化框架介绍"><a href="#接口自动化框架介绍" class="headerlink" title="接口自动化框架介绍"></a>接口自动化框架介绍</h3><ul><li>python-requests：实现python调用http请求</li><li>allure：生成测试报告</li><li>pytest：测试用例框架</li></ul><h3 id="接口用例编写"><a href="#接口用例编写" class="headerlink" title="接口用例编写"></a>接口用例编写</h3><h5 id="基本api功能测试"><a href="#基本api功能测试" class="headerlink" title="基本api功能测试"></a>基本api功能测试</h5><ul><li>冒烟用例</li><li>正向流程覆盖</li></ul><h5 id="基于输入域的测试"><a href="#基于输入域的测试" class="headerlink" title="基于输入域的测试"></a>基于输入域的测试</h5><ul><li>边界值</li><li>特殊字符</li><li>必填参数</li><li>接口幂等：多次发起同样的操作，结果需要是不同的</li><li>组合参数校验</li><li>参数类型校验</li></ul><h5 id="线程安全测试"><a href="#线程安全测试" class="headerlink" title="线程安全测试"></a>线程安全测试</h5><ul><li>并发测试</li><li>分布式测试</li><li>数据库读写安全测试</li></ul><h3 id="接口PO封装思想"><a href="#接口PO封装思想" class="headerlink" title="接口PO封装思想"></a>接口PO封装思想</h3><ul><li>用例之间不应该有依赖，需要都能单独执行</li><li>base_api：完成测试框架中工具的封装，requests、jsonpath等</li><li>api：实现对每个接口的描述，与业务无关，只单纯描述接口</li><li>test_case：组合业务逻辑，单个界面的字段校验，断言</li></ul><h3 id="扩展内容"><a href="#扩展内容" class="headerlink" title="扩展内容"></a>扩展内容</h3><h5 id="jsonshema"><a href="#jsonshema" class="headerlink" title="jsonshema"></a>jsonshema</h5><blockquote><p>把上一次接口响应数据生成一个jsonschema数据，第二次校验时会拿到最新的响应数据与这个jsonschema做比对，比较数据结构，字段类型有没有发生变化</p></blockquote><h6 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h6><ul><li><p>导入genson库，将json数据存放为jsonschema数据</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> genson <span class="keyword">import</span> SchemaBuilder</span><br><span class="line"><span class="keyword">from</span> jsonschema <span class="keyword">import</span> validate, ValidationError, SchemaError</span><br><span class="line"><span class="keyword">from</span> we_work_api.utils.logger <span class="keyword">import</span> logger</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_genson</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    将json数据生成jsonschema文件</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 实例化SchemaBuilder</span></span><br><span class="line">    builder = SchemaBuilder()</span><br><span class="line">    <span class="comment"># 添加一些符合的json数据</span></span><br><span class="line">    <span class="comment"># a可以为int和str,b为str,c为str,d为null,abc为必须返回的字段   </span></span><br><span class="line">        builder.add_object(&#123;<span class="string">&quot;a&quot;</span>:<span class="string">&quot;1&quot;</span>,<span class="string">&quot;b&quot;</span>:<span class="string">&quot;aaa&quot;</span>,<span class="string">&quot;c&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;d&quot;</span>:<span class="literal">None</span>&#125;)</span><br><span class="line">    builder.add_object(&#123;<span class="string">&quot;a&quot;</span>:<span class="number">1</span>,<span class="string">&quot;b&quot;</span>:<span class="string">&quot;aaa&quot;</span>,<span class="string">&quot;c&quot;</span>:<span class="string">&quot;1&quot;</span>,&#125;)</span><br><span class="line">    <span class="comment"># 将jsonschema数据存放至文件中</span></span><br><span class="line">    json.dump(builder.to_schema(),<span class="built_in">open</span>(<span class="string">&quot;dome_schema.json&quot;</span>,<span class="string">&quot;w&quot;</span>))</span><br></pre></td></tr></table></figure></li><li><p>导入jsonschema.validate方法，并封装schema_validate对比方法</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">schema_validate</span>(<span class="params">obj,schema</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    封装schema对比方法</span></span><br><span class="line"><span class="string">    :param obj: 当前获取数据</span></span><br><span class="line"><span class="string">    :param schema: 本地schema数据</span></span><br><span class="line"><span class="string">    :return: True/False</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 尝试去对比数据</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        validate(instance=obj,schema=schema)</span><br><span class="line">    <span class="comment"># 抓取schema内置错误</span></span><br><span class="line">    <span class="keyword">except</span> ValidationError <span class="keyword">as</span> e:</span><br><span class="line">        logger.error(<span class="string">f&quot;验证json_schema失败，失败位置为<span class="subst">&#123;e.path&#125;</span>，失败原因为<span class="subst">&#123;e.message&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">except</span> SchemaError <span class="keyword">as</span> e:</span><br><span class="line">        logger.error(<span class="string">f&quot;验证json_schema失败，失败位置为<span class="subst">&#123;e.path&#125;</span>，失败原因为<span class="subst">&#123;e.message&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># 如果未发生错误，则验证成功</span></span><br><span class="line">        logger.info(<span class="string">&quot;验证成功&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure></li><li><p>使用schema_validate方法进行测试</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_schema</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    1.使用封装的schema比对方法进行测试</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 打开jsonschema文件流</span></span><br><span class="line">    _schema = json.load(<span class="built_in">open</span>(<span class="string">&quot;dome_schema.json&quot;</span>,<span class="string">&quot;r&quot;</span>))</span><br><span class="line">    <span class="comment"># 使用数据跟schema数据作对比</span></span><br><span class="line">    <span class="keyword">assert</span> schema_validate(&#123;<span class="string">&quot;a&quot;</span>:<span class="number">1</span>,<span class="string">&quot;b&quot;</span>:<span class="string">&quot;111&quot;</span>&#125;,_schema)</span><br></pre></td></tr></table></figure></li></ul><h5 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sql</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.database = &#123;<span class="string">&quot;host&quot;</span>:<span class="string">&quot;rm-wz98kz68757yf5k2i2o.mysql.rds.aliyuncs.com&quot;</span>,</span><br><span class="line">                         <span class="string">&quot;port&quot;</span>:<span class="number">3306</span>,</span><br><span class="line">                         <span class="string">&quot;database&quot;</span>:<span class="string">&quot;bbc20201120&quot;</span>,</span><br><span class="line">                         <span class="string">&quot;user&quot;</span>:<span class="string">&quot;ec_admin&quot;</span>,</span><br><span class="line">                         <span class="string">&quot;passwd&quot;</span>:<span class="string">&quot;ec_admin@123&quot;</span>&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">execute_sql</span>(<span class="params">self,sql</span>):</span></span><br><span class="line">        <span class="comment"># 创建连接</span></span><br><span class="line">        self.conne = pymysql.connect(host=self.database[<span class="string">&quot;host&quot;</span>],</span><br><span class="line">                                     user=self.database[<span class="string">&quot;user&quot;</span>],</span><br><span class="line">                                     password=self.database[<span class="string">&quot;passwd&quot;</span>],</span><br><span class="line">                                     db=self.database[<span class="string">&quot;database&quot;</span>],)</span><br><span class="line">        <span class="comment"># 创建游标</span></span><br><span class="line">        self.cursor = self.conne.cursor()</span><br><span class="line">        <span class="comment"># 执行sql语句</span></span><br><span class="line">        self.cursor.execute(sql)</span><br><span class="line">        <span class="comment"># 接收数据</span></span><br><span class="line">        res = self.cursor.fetchall()</span><br><span class="line">        <span class="comment"># 关闭游标</span></span><br><span class="line">        self.cursor.close()</span><br><span class="line">        <span class="comment"># 关闭连接</span></span><br><span class="line">        self.conne.close()</span><br><span class="line">        <span class="comment"># 返回查询数据</span></span><br><span class="line">        <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    sql = Sql()</span><br><span class="line">    <span class="built_in">print</span>(sql.execute_sql(<span class="string">&quot;select * from bbc20201120.tounicktaxpower_order where mobile = &#x27;15000000000&#x27;;&quot;</span>))</span><br></pre></td></tr></table></figure><h5 id="session接口共享token"><a href="#session接口共享token" class="headerlink" title="session接口共享token"></a>session接口共享token</h5><ul><li>使用requests.Session()方式发起请求</li></ul><h5 id="多线程-多进程"><a href="#多线程-多进程" class="headerlink" title="多线程/多进程"></a>多线程/多进程</h5><ul><li>多线程执行测试用例：pytest-xdist库，-n参数指定几个cpu来运行</li><li>pytest-parallel库</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> 自动化 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> requests </tag>
-            
-            <tag> python3 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>adb</title>
-      <link href="/2022/01/15/2022-1-15-adb/"/>
-      <url>/2022/01/15/2022-1-15-adb/</url>
-      
-        <content type="html"><![CDATA[<h3 id="Adb环境搭建准备"><a href="#Adb环境搭建准备" class="headerlink" title="Adb环境搭建准备"></a>Adb环境搭建准备</h3><h4 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h4><h4 id="安装SDK"><a href="#安装SDK" class="headerlink" title="安装SDK"></a>安装SDK</h4><h4 id="验证环境"><a href="#验证环境" class="headerlink" title="验证环境"></a>验证环境</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb version</span><br></pre></td></tr></table></figure><h4 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h4><h5 id="模拟器"><a href="#模拟器" class="headerlink" title="模拟器"></a>模拟器</h5><ul><li>根据模拟器提供的官方文档进行adb连接</li></ul><h5 id="真机"><a href="#真机" class="headerlink" title="真机"></a>真机</h5><ul><li>usb</li><li>开启开发者模式</li><li>删除手机助手类软件</li></ul><h3 id="adb基础"><a href="#adb基础" class="headerlink" title="adb基础"></a>adb基础</h3><h4 id="adb介绍"><a href="#adb介绍" class="headerlink" title="adb介绍"></a>adb介绍</h4><blockquote><p>全称android debug bridge，安卓调试桥，是android环境提供的命令行工具，用户可以通过adb在电脑上对Android设备进行全面操作，比如安装和调试应用，操作文件的传输等</p></blockquote><h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重启服务</span></span><br><span class="line">adb kill-server</span><br><span class="line">adb start-server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看设备状态</span></span><br><span class="line">adb devices    <span class="comment"># device正常；offline设备无响应；unauthorized未授权</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装应用</span></span><br><span class="line">adb install 包路径</span><br><span class="line">adb install -r 包路径   <span class="comment"># 覆盖安装</span></span><br><span class="line">adb -s 设备名 install 包路径  <span class="comment"># 指定设备安装</span></span><br><span class="line"><span class="comment"># 卸载应用</span></span><br><span class="line">adb uninstall 包路径</span><br><span class="line">adb uninstall -k 包路径    <span class="comment"># 卸载包不删除配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前已打开的应用包名</span></span><br><span class="line">adb shell dumpsys window w |grep \/ |grep name=</span><br><span class="line"><span class="comment"># 快速启动app</span></span><br><span class="line">adb shell am start -n 包名</span><br><span class="line"><span class="comment"># 清理缓存</span></span><br><span class="line">adb shell pm clear 包名</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="进阶命令"><a href="#进阶命令" class="headerlink" title="进阶命令"></a>进阶命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设备与电脑传输文件</span></span><br><span class="line">adb push 电脑路径 设备路径   <span class="comment"># 电脑--&gt;设备</span></span><br><span class="line">adb pull 设备路径 电脑路径   <span class="comment"># 设备--&gt;电脑</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看系统日志</span></span><br><span class="line">adb logcat -v time &gt;.\longcat.log</span><br><span class="line"><span class="comment"># 清理日志</span></span><br><span class="line">adb logcat -c</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> adb </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> adb </tag>
-            
-            <tag> android </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>linux与bash脚本</title>
       <link href="/2022/01/15/2022-1-15-linux%E4%B8%8Ebash%E8%84%9A%E6%9C%AC/"/>
       <url>/2022/01/15/2022-1-15-linux%E4%B8%8Ebash%E8%84%9A%E6%9C%AC/</url>
@@ -141,6 +141,62 @@
     
     
     <entry>
+      <title>po设计模型</title>
+      <link href="/2022/01/15/2022-1-15-po%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9E%8B/"/>
+      <url>/2022/01/15/2022-1-15-po%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9E%8B/</url>
+      
+        <content type="html"><![CDATA[<h3 id="PageObject设计思想"><a href="#PageObject设计思想" class="headerlink" title="PageObject设计思想"></a>PageObject设计思想</h3><h4 id="方法意义"><a href="#方法意义" class="headerlink" title="方法意义"></a>方法意义</h4><ul><li>用公共方法代表UI所提供的功能</li><li>方法应该返回其他的pageobject对象或者返回用于断言的数据</li><li>同样的行为不同的结果可以建模为不同的方法</li><li>不要再方法内加断言</li></ul><h4 id="字段意义"><a href="#字段意义" class="headerlink" title="字段意义"></a>字段意义</h4><ul><li>不要暴露页面内部元素给到外部</li><li>不需要建模UI内所有元素</li></ul><h4 id="交互关系"><a href="#交互关系" class="headerlink" title="交互关系"></a>交互关系</h4><ul><li>页面需要class定义</li><li>每个操作动作用方法定义</li><li>方法应该返回跳转页面的页面对象，或者测试用例断言需要用到的数据</li></ul><h4 id="PO执行时的思路"><a href="#PO执行时的思路" class="headerlink" title="PO执行时的思路"></a>PO执行时的思路</h4><ol><li>梳理测试用例</li><li>构造po模型<ul><li>构造页面相关类和方法</li><li>实现暂时可以为空</li></ul></li><li>编写测试用例<ul><li>根据业务逻辑编写</li><li>链式调用</li></ul></li><li>填充实现方法<ul><li>driver初始化</li><li>basepage封装</li></ul></li><li>优化用例<ul><li>封装样板代码：常用的查找元素方法封装至basepage</li><li>提取页面元素：将元素变量私有化，同一元素使用次数多次时，将元素参数化</li><li>添加起始页url：basepage与具体业务没有关系，起始url不建议放在basepage</li></ul></li></ol><h4 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h4><ol><li><p>driver初始化如果绑定在某个页面类中，那么多个页面类都需要进行初始化操作？</p><p><u>解决：driver的初始化部分放在basepage中，其他page类继承basepage，子类可以使用父类的属性，直接通过self.driver调用driver实例对象</u></p></li><li><p>其他页面类在调用basepage时会重复实例化driver的初始化，导致出现多个浏览器？</p><p><u>解决：在__init__初始化方法中添加形参base_driver = None，并加一个判断，当形参为空时，初始化浏览器驱动，当形参有值时直接附上self.driver对象</u></p></li><li><p>如果出现A导入B，B又导入A，这种循环导入的问题？</p><p><u>解决：可以把导包的操作放在方法里面</u></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 自动化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python3 </tag>
+            
+            <tag> appium </tag>
+            
+            <tag> selenium </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>接口自动化</title>
+      <link href="/2022/01/15/2021-12-17-%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+      <url>/2022/01/15/2021-12-17-%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<h3 id="接口自动化框架介绍"><a href="#接口自动化框架介绍" class="headerlink" title="接口自动化框架介绍"></a>接口自动化框架介绍</h3><ul><li>python-requests：实现python调用http请求</li><li>allure：生成测试报告</li><li>pytest：测试用例框架</li></ul><h3 id="接口用例编写"><a href="#接口用例编写" class="headerlink" title="接口用例编写"></a>接口用例编写</h3><h5 id="基本api功能测试"><a href="#基本api功能测试" class="headerlink" title="基本api功能测试"></a>基本api功能测试</h5><ul><li>冒烟用例</li><li>正向流程覆盖</li></ul><h5 id="基于输入域的测试"><a href="#基于输入域的测试" class="headerlink" title="基于输入域的测试"></a>基于输入域的测试</h5><ul><li>边界值</li><li>特殊字符</li><li>必填参数</li><li>接口幂等：多次发起同样的操作，结果需要是不同的</li><li>组合参数校验</li><li>参数类型校验</li></ul><h5 id="线程安全测试"><a href="#线程安全测试" class="headerlink" title="线程安全测试"></a>线程安全测试</h5><ul><li>并发测试</li><li>分布式测试</li><li>数据库读写安全测试</li></ul><h3 id="接口PO封装思想"><a href="#接口PO封装思想" class="headerlink" title="接口PO封装思想"></a>接口PO封装思想</h3><ul><li>用例之间不应该有依赖，需要都能单独执行</li><li>base_api：完成测试框架中工具的封装，requests、jsonpath等</li><li>api：实现对每个接口的描述，与业务无关，只单纯描述接口</li><li>test_case：组合业务逻辑，单个界面的字段校验，断言</li></ul><h3 id="扩展内容"><a href="#扩展内容" class="headerlink" title="扩展内容"></a>扩展内容</h3><h5 id="jsonshema"><a href="#jsonshema" class="headerlink" title="jsonshema"></a>jsonshema</h5><blockquote><p>把上一次接口响应数据生成一个jsonschema数据，第二次校验时会拿到最新的响应数据与这个jsonschema做比对，比较数据结构，字段类型有没有发生变化</p></blockquote><h6 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h6><ul><li><p>导入genson库，将json数据存放为jsonschema数据</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> genson <span class="keyword">import</span> SchemaBuilder</span><br><span class="line"><span class="keyword">from</span> jsonschema <span class="keyword">import</span> validate, ValidationError, SchemaError</span><br><span class="line"><span class="keyword">from</span> we_work_api.utils.logger <span class="keyword">import</span> logger</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_genson</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    将json数据生成jsonschema文件</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 实例化SchemaBuilder</span></span><br><span class="line">    builder = SchemaBuilder()</span><br><span class="line">    <span class="comment"># 添加一些符合的json数据</span></span><br><span class="line">    <span class="comment"># a可以为int和str,b为str,c为str,d为null,abc为必须返回的字段   </span></span><br><span class="line">        builder.add_object(&#123;<span class="string">&quot;a&quot;</span>:<span class="string">&quot;1&quot;</span>,<span class="string">&quot;b&quot;</span>:<span class="string">&quot;aaa&quot;</span>,<span class="string">&quot;c&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;d&quot;</span>:<span class="literal">None</span>&#125;)</span><br><span class="line">    builder.add_object(&#123;<span class="string">&quot;a&quot;</span>:<span class="number">1</span>,<span class="string">&quot;b&quot;</span>:<span class="string">&quot;aaa&quot;</span>,<span class="string">&quot;c&quot;</span>:<span class="string">&quot;1&quot;</span>,&#125;)</span><br><span class="line">    <span class="comment"># 将jsonschema数据存放至文件中</span></span><br><span class="line">    json.dump(builder.to_schema(),<span class="built_in">open</span>(<span class="string">&quot;dome_schema.json&quot;</span>,<span class="string">&quot;w&quot;</span>))</span><br></pre></td></tr></table></figure></li><li><p>导入jsonschema.validate方法，并封装schema_validate对比方法</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">schema_validate</span>(<span class="params">obj,schema</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    封装schema对比方法</span></span><br><span class="line"><span class="string">    :param obj: 当前获取数据</span></span><br><span class="line"><span class="string">    :param schema: 本地schema数据</span></span><br><span class="line"><span class="string">    :return: True/False</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 尝试去对比数据</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        validate(instance=obj,schema=schema)</span><br><span class="line">    <span class="comment"># 抓取schema内置错误</span></span><br><span class="line">    <span class="keyword">except</span> ValidationError <span class="keyword">as</span> e:</span><br><span class="line">        logger.error(<span class="string">f&quot;验证json_schema失败，失败位置为<span class="subst">&#123;e.path&#125;</span>，失败原因为<span class="subst">&#123;e.message&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">except</span> SchemaError <span class="keyword">as</span> e:</span><br><span class="line">        logger.error(<span class="string">f&quot;验证json_schema失败，失败位置为<span class="subst">&#123;e.path&#125;</span>，失败原因为<span class="subst">&#123;e.message&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># 如果未发生错误，则验证成功</span></span><br><span class="line">        logger.info(<span class="string">&quot;验证成功&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure></li><li><p>使用schema_validate方法进行测试</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_schema</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    1.使用封装的schema比对方法进行测试</span></span><br><span class="line"><span class="string">    :return:</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 打开jsonschema文件流</span></span><br><span class="line">    _schema = json.load(<span class="built_in">open</span>(<span class="string">&quot;dome_schema.json&quot;</span>,<span class="string">&quot;r&quot;</span>))</span><br><span class="line">    <span class="comment"># 使用数据跟schema数据作对比</span></span><br><span class="line">    <span class="keyword">assert</span> schema_validate(&#123;<span class="string">&quot;a&quot;</span>:<span class="number">1</span>,<span class="string">&quot;b&quot;</span>:<span class="string">&quot;111&quot;</span>&#125;,_schema)</span><br></pre></td></tr></table></figure></li></ul><h5 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sql</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.database = &#123;<span class="string">&quot;host&quot;</span>:<span class="string">&quot;rm-wz98kz68757yf5k2i2o.mysql.rds.aliyuncs.com&quot;</span>,</span><br><span class="line">                         <span class="string">&quot;port&quot;</span>:<span class="number">3306</span>,</span><br><span class="line">                         <span class="string">&quot;database&quot;</span>:<span class="string">&quot;bbc20201120&quot;</span>,</span><br><span class="line">                         <span class="string">&quot;user&quot;</span>:<span class="string">&quot;ec_admin&quot;</span>,</span><br><span class="line">                         <span class="string">&quot;passwd&quot;</span>:<span class="string">&quot;ec_admin@123&quot;</span>&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">execute_sql</span>(<span class="params">self,sql</span>):</span></span><br><span class="line">        <span class="comment"># 创建连接</span></span><br><span class="line">        self.conne = pymysql.connect(host=self.database[<span class="string">&quot;host&quot;</span>],</span><br><span class="line">                                     user=self.database[<span class="string">&quot;user&quot;</span>],</span><br><span class="line">                                     password=self.database[<span class="string">&quot;passwd&quot;</span>],</span><br><span class="line">                                     db=self.database[<span class="string">&quot;database&quot;</span>],)</span><br><span class="line">        <span class="comment"># 创建游标</span></span><br><span class="line">        self.cursor = self.conne.cursor()</span><br><span class="line">        <span class="comment"># 执行sql语句</span></span><br><span class="line">        self.cursor.execute(sql)</span><br><span class="line">        <span class="comment"># 接收数据</span></span><br><span class="line">        res = self.cursor.fetchall()</span><br><span class="line">        <span class="comment"># 关闭游标</span></span><br><span class="line">        self.cursor.close()</span><br><span class="line">        <span class="comment"># 关闭连接</span></span><br><span class="line">        self.conne.close()</span><br><span class="line">        <span class="comment"># 返回查询数据</span></span><br><span class="line">        <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    sql = Sql()</span><br><span class="line">    <span class="built_in">print</span>(sql.execute_sql(<span class="string">&quot;select * from bbc20201120.tounicktaxpower_order where mobile = &#x27;15000000000&#x27;;&quot;</span>))</span><br></pre></td></tr></table></figure><h5 id="session接口共享token"><a href="#session接口共享token" class="headerlink" title="session接口共享token"></a>session接口共享token</h5><ul><li>使用requests.Session()方式发起请求</li></ul><h5 id="多线程-多进程"><a href="#多线程-多进程" class="headerlink" title="多线程/多进程"></a>多线程/多进程</h5><ul><li>多线程执行测试用例：pytest-xdist库，-n参数指定几个cpu来运行</li><li>pytest-parallel库</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 自动化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python3 </tag>
+            
+            <tag> requests </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>selenium自动化</title>
       <link href="/2022/01/15/2022-1-15-selenium%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
       <url>/2022/01/15/2022-1-15-selenium%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
@@ -160,35 +216,6 @@
             <tag> python3 </tag>
             
             <tag> selenium </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>po设计模型</title>
-      <link href="/2022/01/15/2022-1-15-po%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9E%8B/"/>
-      <url>/2022/01/15/2022-1-15-po%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9E%8B/</url>
-      
-        <content type="html"><![CDATA[<h3 id="PageObject设计思想"><a href="#PageObject设计思想" class="headerlink" title="PageObject设计思想"></a>PageObject设计思想</h3><h4 id="方法意义"><a href="#方法意义" class="headerlink" title="方法意义"></a>方法意义</h4><ul><li>用公共方法代表UI所提供的功能</li><li>方法应该返回其他的pageobject对象或者返回用于断言的数据</li><li>同样的行为不同的结果可以建模为不同的方法</li><li>不要再方法内加断言</li></ul><h4 id="字段意义"><a href="#字段意义" class="headerlink" title="字段意义"></a>字段意义</h4><ul><li>不要暴露页面内部元素给到外部</li><li>不需要建模UI内所有元素</li></ul><h4 id="交互关系"><a href="#交互关系" class="headerlink" title="交互关系"></a>交互关系</h4><ul><li>页面需要class定义</li><li>每个操作动作用方法定义</li><li>方法应该返回跳转页面的页面对象，或者测试用例断言需要用到的数据</li></ul><h4 id="PO执行时的思路"><a href="#PO执行时的思路" class="headerlink" title="PO执行时的思路"></a>PO执行时的思路</h4><ol><li>梳理测试用例</li><li>构造po模型<ul><li>构造页面相关类和方法</li><li>实现暂时可以为空</li></ul></li><li>编写测试用例<ul><li>根据业务逻辑编写</li><li>链式调用</li></ul></li><li>填充实现方法<ul><li>driver初始化</li><li>basepage封装</li></ul></li><li>优化用例<ul><li>封装样板代码：常用的查找元素方法封装至basepage</li><li>提取页面元素：将元素变量私有化，同一元素使用次数多次时，将元素参数化</li><li>添加起始页url：basepage与具体业务没有关系，起始url不建议放在basepage</li></ul></li></ol><h4 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h4><ol><li><p>driver初始化如果绑定在某个页面类中，那么多个页面类都需要进行初始化操作？</p><p><u>解决：driver的初始化部分放在basepage中，其他page类继承basepage，子类可以使用父类的属性，直接通过self.driver调用driver实例对象</u></p></li><li><p>其他页面类在调用basepage时会重复实例化driver的初始化，导致出现多个浏览器？</p><p><u>解决：在__init__初始化方法中添加形参base_driver = None，并加一个判断，当形参为空时，初始化浏览器驱动，当形参有值时直接附上self.driver对象</u></p></li><li><p>如果出现A导入B，B又导入A，这种循环导入的问题？</p><p><u>解决：可以把导包的操作放在方法里面</u></p></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 自动化 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> python3 </tag>
-            
-            <tag> selenium </tag>
-            
-            <tag> appium </tag>
             
         </tags>
       
@@ -317,9 +344,9 @@
       
         <tags>
             
-            <tag> python3 </tag>
-            
             <tag> Vue.js </tag>
+            
+            <tag> python3 </tag>
             
         </tags>
       
@@ -396,9 +423,9 @@
       
         <tags>
             
-            <tag> python3 </tag>
-            
             <tag> Vue.js </tag>
+            
+            <tag> python3 </tag>
             
             <tag> flask </tag>
             
