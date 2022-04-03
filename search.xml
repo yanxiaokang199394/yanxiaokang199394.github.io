@@ -81,31 +81,6 @@
     
     
     <entry>
-      <title>python项目生成依赖文件清单</title>
-      <link href="/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%94%9F%E6%88%90%E4%BE%9D%E8%B5%96%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95/"/>
-      <url>/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%94%9F%E6%88%90%E4%BE%9D%E8%B5%96%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95/</url>
-      
-        <content type="html"><![CDATA[<h3 id="安装第三方库"><a href="#安装第三方库" class="headerlink" title="安装第三方库"></a>安装第三方库</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pipreqs</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 当前项目下使用</span></span><br><span class="line">pipreqs ./</span><br><span class="line"><span class="comment"># 上面命令不能用时，使用</span></span><br><span class="line">pipreqs ./ --encoding=utf-<span class="number">8</span></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> python3 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> python3 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>测试策略：自动化的思考</title>
       <link href="/2022/01/20/2022-1-20-%E6%B5%8B%E8%AF%95%E7%AD%96%E7%95%A5%EF%BC%9A%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9A%84%E6%80%9D%E8%80%83/"/>
       <url>/2022/01/20/2022-1-20-%E6%B5%8B%E8%AF%95%E7%AD%96%E7%95%A5%EF%BC%9A%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9A%84%E6%80%9D%E8%80%83/</url>
@@ -136,6 +111,31 @@
       <url>/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E6%A0%91%E7%94%9F%E6%88%90/</url>
       
         <content type="html"><![CDATA[<h3 id="安装tree工具，"><a href="#安装tree工具，" class="headerlink" title="安装tree工具，"></a>安装tree工具，</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install tree</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># n表示目录层级</span><br><span class="line">tree -L n</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> python3 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python项目生成依赖文件清单</title>
+      <link href="/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%94%9F%E6%88%90%E4%BE%9D%E8%B5%96%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95/"/>
+      <url>/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%94%9F%E6%88%90%E4%BE%9D%E8%B5%96%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95/</url>
+      
+        <content type="html"><![CDATA[<h3 id="安装第三方库"><a href="#安装第三方库" class="headerlink" title="安装第三方库"></a>安装第三方库</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pipreqs</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 当前项目下使用</span></span><br><span class="line">pipreqs ./</span><br><span class="line"><span class="comment"># 上面命令不能用时，使用</span></span><br><span class="line">pipreqs ./ --encoding=utf-<span class="number">8</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -293,33 +293,6 @@
     
     
     <entry>
-      <title>selenium自动化</title>
-      <link href="/2022/01/15/2022-1-15-selenium%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-      <url>/2022/01/15/2022-1-15-selenium%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
-      
-        <content type="html"><![CDATA[<h3 id="隐式等待与显式等待"><a href="#隐式等待与显式等待" class="headerlink" title="隐式等待与显式等待"></a>隐式等待与显式等待</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 直接等待</span></span><br><span class="line">time.sleep()</span><br></pre></td></tr></table></figure><h4 id="隐式等待"><a href="#隐式等待" class="headerlink" title="隐式等待"></a>隐式等待</h4><ul><li>设置一个等待时间，轮询查找（默认0.5秒）元素是否出现，如果没有出现则抛出异常</li><li>缺点: 当一个元素出现异常时，会等到等待时间结束才抛出异常，影响效率</li><li>一般放在浏览器驱动初始化方法里面，整个driver全局等待</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 隐式等待</span></span><br><span class="line">implicitly_wait()</span><br></pre></td></tr></table></figure><h4 id="显式等待"><a href="#显式等待" class="headerlink" title="显式等待"></a>显式等待</h4><ul><li>指定一个等待条件，当条件满足时则继续执行，不满足则抛异常</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="comment">#在10秒内隔1秒去执行一次until中调用的方法，直到方法不再返回false</span></span><br><span class="line">WebDriverWait(self.driver,<span class="number">10</span>,<span class="number">1</span>).until(EC.具体条件)</span><br><span class="line"><span class="comment"># 在10秒内隔1秒去执行一次until_not中调用的方法，直到方法返回false</span></span><br><span class="line">WebDriverWait(self.driver,<span class="number">10</span>,<span class="number">1</span>).until_not(EC.具体条件)</span><br></pre></td></tr></table></figure><h3 id="元素定位"><a href="#元素定位" class="headerlink" title="元素定位"></a>元素定位</h3><h4 id="常见元素定位方法"><a href="#常见元素定位方法" class="headerlink" title="常见元素定位方法"></a>常见元素定位方法</h4><ul><li>id</li><li>name</li><li>class_name</li><li>css</li><li>xpath</li></ul><h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul><li>元素有id、name直接使用id或name定位，一般id和name为唯一</li><li>其次优先使用css定位，但css定位可能不适用移动端自动化</li><li>xpath兼容web与app端，但是xpath是在整个页面中去找元素，速度慢</li></ul><h3 id="web控件交互"><a href="#web控件交互" class="headerlink" title="web控件交互"></a>web控件交互</h3><h4 id="ActionChains"><a href="#ActionChains" class="headerlink" title="ActionChains"></a>ActionChains</h4><blockquote><p>调用ActionChains时，不会立刻执行，而是将所有操作按顺序存放在一个队列里面，当你调用perform()时，队列里的事件会依次执行</p></blockquote><h5 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 点击</span></span><br><span class="line">click</span><br><span class="line"><span class="comment"># 双击</span></span><br><span class="line">double_click</span><br><span class="line"><span class="comment"># 右击</span></span><br><span class="line">context_click</span><br><span class="line"><span class="comment"># 拖拽</span></span><br><span class="line">drag_and_drop</span><br><span class="line"><span class="comment"># 移动光标</span></span><br><span class="line">move_to_element</span><br></pre></td></tr></table></figure><h4 id="TouchActions"><a href="#TouchActions" class="headerlink" title="TouchActions"></a>TouchActions</h4><blockquote><p>模拟pc或h5端的操作</p></blockquote><h5 id="常用操作-1"><a href="#常用操作-1" class="headerlink" title="常用操作"></a>常用操作</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 点击</span></span><br><span class="line">tap</span><br><span class="line"><span class="comment"># 双击</span></span><br><span class="line">double_tap</span><br><span class="line"><span class="comment"># 长按</span></span><br><span class="line">long_press</span><br><span class="line"><span class="comment"># 滑动</span></span><br><span class="line">scroll_from_element</span><br><span class="line"><span class="comment"># 点击不释放</span></span><br><span class="line">tap_and_hold</span><br><span class="line"><span class="comment"># 从某个元素位置开始手势滑动(负数：向上滑动，正数：向下滑动)</span></span><br><span class="line">flick_element</span><br></pre></td></tr></table></figure><h3 id="多窗口-frame"><a href="#多窗口-frame" class="headerlink" title="多窗口/frame"></a>多窗口/frame</h3><h4 id="多窗口切换"><a href="#多窗口切换" class="headerlink" title="多窗口切换"></a>多窗口切换</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 先获取当前的窗口句柄，在获取所有窗口句柄，再进行窗口切换</span></span><br><span class="line">current_window_handle   <span class="comment"># 获取当前窗口句柄</span></span><br><span class="line">window_handles    <span class="comment"># 获取全部窗口句柄</span></span><br><span class="line">switch_to.window  <span class="comment"># 切换窗口</span></span><br></pre></td></tr></table></figure><h4 id="frame"><a href="#frame" class="headerlink" title="frame"></a>frame</h4><h5 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h5><ul><li>frameset<ul><li>clos：垂直布局</li><li>rows：水平布局</li></ul></li><li>frame</li><li>iframe</li></ul><h5 id="多frame切换"><a href="#多frame切换" class="headerlink" title="多frame切换"></a>多frame切换</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换至frame</span></span><br><span class="line">switch_to.frame(frame名)</span><br><span class="line"><span class="comment"># 切换至父frame</span></span><br><span class="line">switch_to.parent_frame()</span><br><span class="line"><span class="comment"># 切换至主文档</span></span><br><span class="line">switch_to.default_content()</span><br></pre></td></tr></table></figure><h3 id="多浏览器处理"><a href="#多浏览器处理" class="headerlink" title="多浏览器处理"></a>多浏览器处理</h3><ul><li>在basepage里面增加判断来创建对应浏览器的driver，使用os.getenv()读取全局变量</li></ul><h3 id="执行JavaScript脚本"><a href="#执行JavaScript脚本" class="headerlink" title="执行JavaScript脚本"></a>执行JavaScript脚本</h3><h4 id="selenium调用js脚本"><a href="#selenium调用js脚本" class="headerlink" title="selenium调用js脚本"></a>selenium调用js脚本</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 如果想要js脚本返回数据，需要加上return</span></span><br><span class="line">execute_script()</span><br></pre></td></tr></table></figure><h4 id="常用js方法"><a href="#常用js方法" class="headerlink" title="常用js方法"></a>常用js方法</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 获取当前页面性能指标</span><br><span class="line"><span class="built_in">JSON</span>.stringify(performance.timing)</span><br><span class="line"># 使用js定位元素</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&#x27;su&#x27;</span>)</span><br><span class="line"># 移动页面至最底部</span><br><span class="line"><span class="built_in">document</span>.documentElement.scrollTop=<span class="number">10000</span></span><br><span class="line"># 获取页面title</span><br><span class="line"><span class="built_in">document</span>.title</span><br></pre></td></tr></table></figure><h4 id="js处理时间控件案例"><a href="#js处理时间控件案例" class="headerlink" title="js处理时间控件案例"></a>js处理时间控件案例</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 思路：先将时间控件中的只读标签删除，然后直接给时间控件赋值</span><br><span class="line"><span class="string">&quot;a=document.getElementById(&#x27;J_RoomGuestInfoTxt&#x27;);a.removeAttribute(&#x27;readonly&#x27;);a.value=&#x27;一万个&#x27;&quot;</span></span><br><span class="line"># 同时需要执行多个JS脚本时，中间用;隔开即可</span><br><span class="line"># 删除标签readonly属性</span><br><span class="line">removeAttribute(<span class="string">&#x27;readonly&#x27;</span>)</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 自动化 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> python3 </tag>
-            
-            <tag> selenium </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>linux与bash脚本</title>
       <link href="/2022/01/15/2022-1-15-linux%E4%B8%8Ebash%E8%84%9A%E6%9C%AC/"/>
       <url>/2022/01/15/2022-1-15-linux%E4%B8%8Ebash%E8%84%9A%E6%9C%AC/</url>
@@ -368,6 +341,33 @@
             <tag> selenium </tag>
             
             <tag> appium </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>selenium自动化</title>
+      <link href="/2022/01/15/2022-1-15-selenium%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+      <url>/2022/01/15/2022-1-15-selenium%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<h3 id="隐式等待与显式等待"><a href="#隐式等待与显式等待" class="headerlink" title="隐式等待与显式等待"></a>隐式等待与显式等待</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 直接等待</span></span><br><span class="line">time.sleep()</span><br></pre></td></tr></table></figure><h4 id="隐式等待"><a href="#隐式等待" class="headerlink" title="隐式等待"></a>隐式等待</h4><ul><li>设置一个等待时间，轮询查找（默认0.5秒）元素是否出现，如果没有出现则抛出异常</li><li>缺点: 当一个元素出现异常时，会等到等待时间结束才抛出异常，影响效率</li><li>一般放在浏览器驱动初始化方法里面，整个driver全局等待</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 隐式等待</span></span><br><span class="line">implicitly_wait()</span><br></pre></td></tr></table></figure><h4 id="显式等待"><a href="#显式等待" class="headerlink" title="显式等待"></a>显式等待</h4><ul><li>指定一个等待条件，当条件满足时则继续执行，不满足则抛异常</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="comment">#在10秒内隔1秒去执行一次until中调用的方法，直到方法不再返回false</span></span><br><span class="line">WebDriverWait(self.driver,<span class="number">10</span>,<span class="number">1</span>).until(EC.具体条件)</span><br><span class="line"><span class="comment"># 在10秒内隔1秒去执行一次until_not中调用的方法，直到方法返回false</span></span><br><span class="line">WebDriverWait(self.driver,<span class="number">10</span>,<span class="number">1</span>).until_not(EC.具体条件)</span><br></pre></td></tr></table></figure><h3 id="元素定位"><a href="#元素定位" class="headerlink" title="元素定位"></a>元素定位</h3><h4 id="常见元素定位方法"><a href="#常见元素定位方法" class="headerlink" title="常见元素定位方法"></a>常见元素定位方法</h4><ul><li>id</li><li>name</li><li>class_name</li><li>css</li><li>xpath</li></ul><h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul><li>元素有id、name直接使用id或name定位，一般id和name为唯一</li><li>其次优先使用css定位，但css定位可能不适用移动端自动化</li><li>xpath兼容web与app端，但是xpath是在整个页面中去找元素，速度慢</li></ul><h3 id="web控件交互"><a href="#web控件交互" class="headerlink" title="web控件交互"></a>web控件交互</h3><h4 id="ActionChains"><a href="#ActionChains" class="headerlink" title="ActionChains"></a>ActionChains</h4><blockquote><p>调用ActionChains时，不会立刻执行，而是将所有操作按顺序存放在一个队列里面，当你调用perform()时，队列里的事件会依次执行</p></blockquote><h5 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 点击</span></span><br><span class="line">click</span><br><span class="line"><span class="comment"># 双击</span></span><br><span class="line">double_click</span><br><span class="line"><span class="comment"># 右击</span></span><br><span class="line">context_click</span><br><span class="line"><span class="comment"># 拖拽</span></span><br><span class="line">drag_and_drop</span><br><span class="line"><span class="comment"># 移动光标</span></span><br><span class="line">move_to_element</span><br></pre></td></tr></table></figure><h4 id="TouchActions"><a href="#TouchActions" class="headerlink" title="TouchActions"></a>TouchActions</h4><blockquote><p>模拟pc或h5端的操作</p></blockquote><h5 id="常用操作-1"><a href="#常用操作-1" class="headerlink" title="常用操作"></a>常用操作</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 点击</span></span><br><span class="line">tap</span><br><span class="line"><span class="comment"># 双击</span></span><br><span class="line">double_tap</span><br><span class="line"><span class="comment"># 长按</span></span><br><span class="line">long_press</span><br><span class="line"><span class="comment"># 滑动</span></span><br><span class="line">scroll_from_element</span><br><span class="line"><span class="comment"># 点击不释放</span></span><br><span class="line">tap_and_hold</span><br><span class="line"><span class="comment"># 从某个元素位置开始手势滑动(负数：向上滑动，正数：向下滑动)</span></span><br><span class="line">flick_element</span><br></pre></td></tr></table></figure><h3 id="多窗口-frame"><a href="#多窗口-frame" class="headerlink" title="多窗口/frame"></a>多窗口/frame</h3><h4 id="多窗口切换"><a href="#多窗口切换" class="headerlink" title="多窗口切换"></a>多窗口切换</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 先获取当前的窗口句柄，在获取所有窗口句柄，再进行窗口切换</span></span><br><span class="line">current_window_handle   <span class="comment"># 获取当前窗口句柄</span></span><br><span class="line">window_handles    <span class="comment"># 获取全部窗口句柄</span></span><br><span class="line">switch_to.window  <span class="comment"># 切换窗口</span></span><br></pre></td></tr></table></figure><h4 id="frame"><a href="#frame" class="headerlink" title="frame"></a>frame</h4><h5 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h5><ul><li>frameset<ul><li>clos：垂直布局</li><li>rows：水平布局</li></ul></li><li>frame</li><li>iframe</li></ul><h5 id="多frame切换"><a href="#多frame切换" class="headerlink" title="多frame切换"></a>多frame切换</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换至frame</span></span><br><span class="line">switch_to.frame(frame名)</span><br><span class="line"><span class="comment"># 切换至父frame</span></span><br><span class="line">switch_to.parent_frame()</span><br><span class="line"><span class="comment"># 切换至主文档</span></span><br><span class="line">switch_to.default_content()</span><br></pre></td></tr></table></figure><h3 id="多浏览器处理"><a href="#多浏览器处理" class="headerlink" title="多浏览器处理"></a>多浏览器处理</h3><ul><li>在basepage里面增加判断来创建对应浏览器的driver，使用os.getenv()读取全局变量</li></ul><h3 id="执行JavaScript脚本"><a href="#执行JavaScript脚本" class="headerlink" title="执行JavaScript脚本"></a>执行JavaScript脚本</h3><h4 id="selenium调用js脚本"><a href="#selenium调用js脚本" class="headerlink" title="selenium调用js脚本"></a>selenium调用js脚本</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 如果想要js脚本返回数据，需要加上return</span></span><br><span class="line">execute_script()</span><br></pre></td></tr></table></figure><h4 id="常用js方法"><a href="#常用js方法" class="headerlink" title="常用js方法"></a>常用js方法</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 获取当前页面性能指标</span><br><span class="line"><span class="built_in">JSON</span>.stringify(performance.timing)</span><br><span class="line"># 使用js定位元素</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">&#x27;su&#x27;</span>)</span><br><span class="line"># 移动页面至最底部</span><br><span class="line"><span class="built_in">document</span>.documentElement.scrollTop=<span class="number">10000</span></span><br><span class="line"># 获取页面title</span><br><span class="line"><span class="built_in">document</span>.title</span><br></pre></td></tr></table></figure><h4 id="js处理时间控件案例"><a href="#js处理时间控件案例" class="headerlink" title="js处理时间控件案例"></a>js处理时间控件案例</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 思路：先将时间控件中的只读标签删除，然后直接给时间控件赋值</span><br><span class="line"><span class="string">&quot;a=document.getElementById(&#x27;J_RoomGuestInfoTxt&#x27;);a.removeAttribute(&#x27;readonly&#x27;);a.value=&#x27;一万个&#x27;&quot;</span></span><br><span class="line"># 同时需要执行多个JS脚本时，中间用;隔开即可</span><br><span class="line"># 删除标签readonly属性</span><br><span class="line">removeAttribute(<span class="string">&#x27;readonly&#x27;</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 自动化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python3 </tag>
+            
+            <tag> selenium </tag>
             
         </tags>
       
