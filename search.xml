@@ -120,9 +120,9 @@
       
         <tags>
             
-            <tag> requests </tag>
-            
             <tag> python3 </tag>
+            
+            <tag> requests </tag>
             
         </tags>
       
@@ -156,23 +156,23 @@
     
     
     <entry>
-      <title>python项目生成依赖文件清单</title>
-      <link href="/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%94%9F%E6%88%90%E4%BE%9D%E8%B5%96%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95/"/>
-      <url>/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%94%9F%E6%88%90%E4%BE%9D%E8%B5%96%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95/</url>
+      <title>Mac使用的tips</title>
+      <link href="/2022/01/20/2022-1-20-Mac%E4%BD%BF%E7%94%A8%E7%9A%84tips/"/>
+      <url>/2022/01/20/2022-1-20-Mac%E4%BD%BF%E7%94%A8%E7%9A%84tips/</url>
       
-        <content type="html"><![CDATA[<h3 id="安装第三方库"><a href="#安装第三方库" class="headerlink" title="安装第三方库"></a>安装第三方库</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pipreqs</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 当前项目下使用</span></span><br><span class="line">pipreqs ./</span><br><span class="line"><span class="comment"># 上面命令不能用时，使用</span></span><br><span class="line">pipreqs ./ --encoding=utf-<span class="number">8</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h3 id="1、切换root用户"><a href="#1、切换root用户" class="headerlink" title="1、切换root用户"></a>1、切换root用户</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo -i</span><br></pre></td></tr></table></figure><h3 id="2、查看本机ip"><a href="#2、查看本机ip" class="headerlink" title="2、查看本机ip"></a>2、查看本机ip</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig | grep &quot;inet&quot;</span><br></pre></td></tr></table></figure><p>3、chromedriver存放路径</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/bin/</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
           
-          <category> python3 </category>
+          <category> Mac </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> python3 </tag>
+            <tag> Mac </tag>
             
         </tags>
       
@@ -181,11 +181,11 @@
     
     
     <entry>
-      <title>python项目结构树生成</title>
-      <link href="/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E6%A0%91%E7%94%9F%E6%88%90/"/>
-      <url>/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E6%A0%91%E7%94%9F%E6%88%90/</url>
+      <title>python项目生成依赖文件清单</title>
+      <link href="/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%94%9F%E6%88%90%E4%BE%9D%E8%B5%96%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95/"/>
+      <url>/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%94%9F%E6%88%90%E4%BE%9D%E8%B5%96%E6%96%87%E4%BB%B6%E6%B8%85%E5%8D%95/</url>
       
-        <content type="html"><![CDATA[<h3 id="安装tree工具，"><a href="#安装tree工具，" class="headerlink" title="安装tree工具，"></a>安装tree工具，</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install tree</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># n表示目录层级</span><br><span class="line">tree -L n</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h3 id="安装第三方库"><a href="#安装第三方库" class="headerlink" title="安装第三方库"></a>安装第三方库</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pipreqs</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 当前项目下使用</span></span><br><span class="line">pipreqs ./</span><br><span class="line"><span class="comment"># 上面命令不能用时，使用</span></span><br><span class="line">pipreqs ./ --encoding=utf-<span class="number">8</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -231,23 +231,23 @@
     
     
     <entry>
-      <title>Mac使用的tips</title>
-      <link href="/2022/01/20/2022-1-20-Mac%E4%BD%BF%E7%94%A8%E7%9A%84tips/"/>
-      <url>/2022/01/20/2022-1-20-Mac%E4%BD%BF%E7%94%A8%E7%9A%84tips/</url>
+      <title>python项目结构树生成</title>
+      <link href="/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E6%A0%91%E7%94%9F%E6%88%90/"/>
+      <url>/2022/01/20/2022-1-20-python%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E6%A0%91%E7%94%9F%E6%88%90/</url>
       
-        <content type="html"><![CDATA[<h3 id="1、切换root用户"><a href="#1、切换root用户" class="headerlink" title="1、切换root用户"></a>1、切换root用户</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo -i</span><br></pre></td></tr></table></figure><h3 id="2、查看本机ip"><a href="#2、查看本机ip" class="headerlink" title="2、查看本机ip"></a>2、查看本机ip</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig | grep &quot;inet&quot;</span><br></pre></td></tr></table></figure><p>3、chromedriver存放路径</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/bin/</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h3 id="安装tree工具，"><a href="#安装tree工具，" class="headerlink" title="安装tree工具，"></a>安装tree工具，</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install tree</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># n表示目录层级</span><br><span class="line">tree -L n</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
           
-          <category> Mac </category>
+          <category> python3 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Mac </tag>
+            <tag> python3 </tag>
             
         </tags>
       
@@ -281,11 +281,11 @@
     
     
     <entry>
-      <title>WEditor工具安装</title>
-      <link href="/2022/01/16/2022-1-16-WEditor%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/"/>
-      <url>/2022/01/16/2022-1-16-WEditor%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/</url>
+      <title>appium自动化</title>
+      <link href="/2022/01/16/2022-1-16-appium/"/>
+      <url>/2022/01/16/2022-1-16-appium/</url>
       
-        <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装uiautomator2</span></span><br><span class="line">pip install --pre -U uiautomator2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装weditor</span></span><br><span class="line">pip install weditor</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化手机设备环境</span></span><br><span class="line">python -m uiautomator2 init <span class="comment"># 手机出现ATX小汽车app</span></span><br></pre></td></tr></table></figure><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m weditor</span><br></pre></td></tr></table></figure><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>安装完weditor后，手机上自动安装的ATX软件会跟appium起冲突</li><li>运行appium时需要把ATX软件卸载</li></ul>]]></content>
+        <content type="html"><![CDATA[<h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><ul><li><p>JDK</p></li><li><p>SDK</p></li><li><p>appium desktop</p></li><li><p>appium-python-client</p><p>安装方法：pip install appium-python-client</p></li><li><p>安卓模拟器/真机</p></li><li><p>appium server版</p></li></ul><h3 id="adb用例录制"><a href="#adb用例录制" class="headerlink" title="adb用例录制"></a>adb用例录制</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 查看当前连接的设备</span><br><span class="line">adb devices</span><br><span class="line"># 安装应用</span><br><span class="line">adb shell install 包路径</span><br><span class="line"># 查看包名/页面名</span><br><span class="line">adb logcat|grep -i displayed</span><br><span class="line"># 获取当前界面元素</span><br><span class="line">adb shell dumpsys activity top</span><br><span class="line"># 启动应用</span><br><span class="line">adb shell am start -W -n 包名/页面名</span><br></pre></td></tr></table></figure><h3 id="元素定位-隐式等待"><a href="#元素定位-隐式等待" class="headerlink" title="元素定位/隐式等待"></a>元素定位/隐式等待</h3><h4 id="用例的组成"><a href="#用例的组成" class="headerlink" title="用例的组成"></a>用例的组成</h4><ul><li>导入依赖</li><li>capabilities设置</li><li>初始化driver</li><li>隐式等待，增加用例稳定</li><li>元素定位于操作。find+action</li><li>断言 assert</li></ul><h4 id="元素定位"><a href="#元素定位" class="headerlink" title="元素定位"></a>元素定位</h4><ul><li>id方式定位：find_element_by_id(resource-id)</li><li>accessibility_id方式定位：find_element_by_accessibility(content-desc)</li></ul><h4 id="等待方式"><a href="#等待方式" class="headerlink" title="等待方式"></a>等待方式</h4><ul><li>强制等待time.sleep()</li><li>隐式等待(全局等待)</li><li>显式等待(单个元素等待)</li></ul><h3 id="android基础知识"><a href="#android基础知识" class="headerlink" title="android基础知识"></a>android基础知识</h3><h4 id="android七大布局"><a href="#android七大布局" class="headerlink" title="android七大布局"></a>android七大布局</h4><ul><li>线性布局</li><li>相对布局</li><li>帧布局</li><li>绝对布局</li><li>表格布局</li><li>网格布局</li><li>约束布局</li></ul><h4 id="四大组件"><a href="#四大组件" class="headerlink" title="四大组件"></a>四大组件</h4><ul><li>activity：与用户交互的可视化界面</li><li>service：实现程序后台运行的解决方案</li><li>content provider：内容提供者，提供程序所需要的数据</li><li>broadcast receiver：广播接收器，坚挺外部事件的到来（比如来电）</li></ul><h4 id="常用控件"><a href="#常用控件" class="headerlink" title="常用控件"></a>常用控件</h4><ul><li>TextView：文本控件</li><li>EditText：可编辑文本控件</li><li>Button：按钮</li><li>ImageButton：图片按钮</li><li>ToggleButton：开关按钮</li><li>ImageView：图片控件</li><li>CheckBox：复选框控件</li><li>RadioButton：单选框控件</li></ul><p>​        注意点：android应用的层级结构与html不一样，是一个定制的xml</p><h4 id="定位方式"><a href="#定位方式" class="headerlink" title="定位方式"></a>定位方式</h4><ul><li>id定位</li><li>accessibility_id定位</li><li>xpath定位</li></ul><h4 id="定位工具"><a href="#定位工具" class="headerlink" title="定位工具"></a>定位工具</h4><p>​            android sdk自带工具：uiautomatorviewer</p><h3 id="交互"><a href="#交互" class="headerlink" title="交互"></a>交互</h3><h4 id="控件交互"><a href="#控件交互" class="headerlink" title="控件交互"></a>控件交互</h4><ul><li>.click() 点击</li><li>.send_keys() 输入</li><li>.set_value() 设置元素的值</li><li>.clear() 清除操作</li><li>.displayed() 是否可见</li><li>.is_enabled() 是否可用</li><li>.is_selected() 是否被选中</li><li>get_attribute(属性名) 获取属性值</li><li>.location 获取元素坐标</li><li>.size 获取元素尺寸</li></ul><h4 id="触控交互（TouochAction）"><a href="#触控交互（TouochAction）" class="headerlink" title="触控交互（TouochAction）"></a>触控交互（TouochAction）</h4><ul><li>self.driver.get_window_size()  获取设备尺寸</li><li>press()  点按，点按后必须有释放</li><li>move_to()  移动</li><li>release()  释放</li><li>perform()  执行，一切动作完后，需要跟上perform方法才能执行</li></ul><h3 id="高级定位技巧"><a href="#高级定位技巧" class="headerlink" title="高级定位技巧"></a>高级定位技巧</h3><h4 id="xpath定位进阶"><a href="#xpath定位进阶" class="headerlink" title="xpath定位进阶"></a>xpath定位进阶</h4><ul><li>父节点定位子节点</li><li>子节点定位父节点</li><li>子节点定位兄弟节点</li><li>爷爷节点定位孙子节点</li></ul><h4 id="uiautomator定位"><a href="#uiautomator定位" class="headerlink" title="uiautomator定位"></a>uiautomator定位</h4><ul><li>滚动查找</li><li>父子关系查找</li><li>兄弟关系查找</li></ul><h3 id="断言方法"><a href="#断言方法" class="headerlink" title="断言方法"></a>断言方法</h3><ul><li>assert</li><li>Hamcrest断言</li></ul>]]></content>
       
       
       <categories>
@@ -308,11 +308,11 @@
     
     
     <entry>
-      <title>appium自动化</title>
-      <link href="/2022/01/16/2022-1-16-appium/"/>
-      <url>/2022/01/16/2022-1-16-appium/</url>
+      <title>WEditor工具安装</title>
+      <link href="/2022/01/16/2022-1-16-WEditor%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/"/>
+      <url>/2022/01/16/2022-1-16-WEditor%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/</url>
       
-        <content type="html"><![CDATA[<h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><ul><li><p>JDK</p></li><li><p>SDK</p></li><li><p>appium desktop</p></li><li><p>appium-python-client</p><p>安装方法：pip install appium-python-client</p></li><li><p>安卓模拟器/真机</p></li><li><p>appium server版</p></li></ul><h3 id="adb用例录制"><a href="#adb用例录制" class="headerlink" title="adb用例录制"></a>adb用例录制</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 查看当前连接的设备</span><br><span class="line">adb devices</span><br><span class="line"># 安装应用</span><br><span class="line">adb shell install 包路径</span><br><span class="line"># 查看包名/页面名</span><br><span class="line">adb logcat|grep -i displayed</span><br><span class="line"># 获取当前界面元素</span><br><span class="line">adb shell dumpsys activity top</span><br><span class="line"># 启动应用</span><br><span class="line">adb shell am start -W -n 包名/页面名</span><br></pre></td></tr></table></figure><h3 id="元素定位-隐式等待"><a href="#元素定位-隐式等待" class="headerlink" title="元素定位/隐式等待"></a>元素定位/隐式等待</h3><h4 id="用例的组成"><a href="#用例的组成" class="headerlink" title="用例的组成"></a>用例的组成</h4><ul><li>导入依赖</li><li>capabilities设置</li><li>初始化driver</li><li>隐式等待，增加用例稳定</li><li>元素定位于操作。find+action</li><li>断言 assert</li></ul><h4 id="元素定位"><a href="#元素定位" class="headerlink" title="元素定位"></a>元素定位</h4><ul><li>id方式定位：find_element_by_id(resource-id)</li><li>accessibility_id方式定位：find_element_by_accessibility(content-desc)</li></ul><h4 id="等待方式"><a href="#等待方式" class="headerlink" title="等待方式"></a>等待方式</h4><ul><li>强制等待time.sleep()</li><li>隐式等待(全局等待)</li><li>显式等待(单个元素等待)</li></ul><h3 id="android基础知识"><a href="#android基础知识" class="headerlink" title="android基础知识"></a>android基础知识</h3><h4 id="android七大布局"><a href="#android七大布局" class="headerlink" title="android七大布局"></a>android七大布局</h4><ul><li>线性布局</li><li>相对布局</li><li>帧布局</li><li>绝对布局</li><li>表格布局</li><li>网格布局</li><li>约束布局</li></ul><h4 id="四大组件"><a href="#四大组件" class="headerlink" title="四大组件"></a>四大组件</h4><ul><li>activity：与用户交互的可视化界面</li><li>service：实现程序后台运行的解决方案</li><li>content provider：内容提供者，提供程序所需要的数据</li><li>broadcast receiver：广播接收器，坚挺外部事件的到来（比如来电）</li></ul><h4 id="常用控件"><a href="#常用控件" class="headerlink" title="常用控件"></a>常用控件</h4><ul><li>TextView：文本控件</li><li>EditText：可编辑文本控件</li><li>Button：按钮</li><li>ImageButton：图片按钮</li><li>ToggleButton：开关按钮</li><li>ImageView：图片控件</li><li>CheckBox：复选框控件</li><li>RadioButton：单选框控件</li></ul><p>​        注意点：android应用的层级结构与html不一样，是一个定制的xml</p><h4 id="定位方式"><a href="#定位方式" class="headerlink" title="定位方式"></a>定位方式</h4><ul><li>id定位</li><li>accessibility_id定位</li><li>xpath定位</li></ul><h4 id="定位工具"><a href="#定位工具" class="headerlink" title="定位工具"></a>定位工具</h4><p>​            android sdk自带工具：uiautomatorviewer</p><h3 id="交互"><a href="#交互" class="headerlink" title="交互"></a>交互</h3><h4 id="控件交互"><a href="#控件交互" class="headerlink" title="控件交互"></a>控件交互</h4><ul><li>.click() 点击</li><li>.send_keys() 输入</li><li>.set_value() 设置元素的值</li><li>.clear() 清除操作</li><li>.displayed() 是否可见</li><li>.is_enabled() 是否可用</li><li>.is_selected() 是否被选中</li><li>get_attribute(属性名) 获取属性值</li><li>.location 获取元素坐标</li><li>.size 获取元素尺寸</li></ul><h4 id="触控交互（TouochAction）"><a href="#触控交互（TouochAction）" class="headerlink" title="触控交互（TouochAction）"></a>触控交互（TouochAction）</h4><ul><li>self.driver.get_window_size()  获取设备尺寸</li><li>press()  点按，点按后必须有释放</li><li>move_to()  移动</li><li>release()  释放</li><li>perform()  执行，一切动作完后，需要跟上perform方法才能执行</li></ul><h3 id="高级定位技巧"><a href="#高级定位技巧" class="headerlink" title="高级定位技巧"></a>高级定位技巧</h3><h4 id="xpath定位进阶"><a href="#xpath定位进阶" class="headerlink" title="xpath定位进阶"></a>xpath定位进阶</h4><ul><li>父节点定位子节点</li><li>子节点定位父节点</li><li>子节点定位兄弟节点</li><li>爷爷节点定位孙子节点</li></ul><h4 id="uiautomator定位"><a href="#uiautomator定位" class="headerlink" title="uiautomator定位"></a>uiautomator定位</h4><ul><li>滚动查找</li><li>父子关系查找</li><li>兄弟关系查找</li></ul><h3 id="断言方法"><a href="#断言方法" class="headerlink" title="断言方法"></a>断言方法</h3><ul><li>assert</li><li>Hamcrest断言</li></ul>]]></content>
+        <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装uiautomator2</span></span><br><span class="line">pip install --pre -U uiautomator2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装weditor</span></span><br><span class="line">pip install weditor</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化手机设备环境</span></span><br><span class="line">python -m uiautomator2 init <span class="comment"># 手机出现ATX小汽车app</span></span><br></pre></td></tr></table></figure><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m weditor</span><br></pre></td></tr></table></figure><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>安装完weditor后，手机上自动安装的ATX软件会跟appium起冲突</li><li>运行appium时需要把ATX软件卸载</li></ul>]]></content>
       
       
       <categories>
@@ -351,36 +351,9 @@
       
         <tags>
             
-            <tag> requests </tag>
-            
             <tag> python3 </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>adb</title>
-      <link href="/2022/01/15/2022-1-15-adb/"/>
-      <url>/2022/01/15/2022-1-15-adb/</url>
-      
-        <content type="html"><![CDATA[<h3 id="Adb环境搭建准备"><a href="#Adb环境搭建准备" class="headerlink" title="Adb环境搭建准备"></a>Adb环境搭建准备</h3><h4 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h4><h4 id="安装SDK"><a href="#安装SDK" class="headerlink" title="安装SDK"></a>安装SDK</h4><h4 id="验证环境"><a href="#验证环境" class="headerlink" title="验证环境"></a>验证环境</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb version</span><br></pre></td></tr></table></figure><h4 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h4><h5 id="模拟器"><a href="#模拟器" class="headerlink" title="模拟器"></a>模拟器</h5><ul><li>根据模拟器提供的官方文档进行adb连接</li></ul><h5 id="真机"><a href="#真机" class="headerlink" title="真机"></a>真机</h5><ul><li>usb</li><li>开启开发者模式</li><li>删除手机助手类软件</li></ul><h3 id="adb基础"><a href="#adb基础" class="headerlink" title="adb基础"></a>adb基础</h3><h4 id="adb介绍"><a href="#adb介绍" class="headerlink" title="adb介绍"></a>adb介绍</h4><blockquote><p>全称android debug bridge，安卓调试桥，是android环境提供的命令行工具，用户可以通过adb在电脑上对Android设备进行全面操作，比如安装和调试应用，操作文件的传输等</p></blockquote><h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重启服务</span></span><br><span class="line">adb kill-server</span><br><span class="line">adb start-server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看设备状态</span></span><br><span class="line">adb devices    <span class="comment"># device正常；offline设备无响应；unauthorized未授权</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装应用</span></span><br><span class="line">adb install 包路径</span><br><span class="line">adb install -r 包路径   <span class="comment"># 覆盖安装</span></span><br><span class="line">adb -s 设备名 install 包路径  <span class="comment"># 指定设备安装</span></span><br><span class="line"><span class="comment"># 卸载应用</span></span><br><span class="line">adb uninstall 包路径</span><br><span class="line">adb uninstall -k 包路径    <span class="comment"># 卸载包不删除配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前已打开的应用包名</span></span><br><span class="line">adb shell dumpsys window w |grep \/ |grep name=</span><br><span class="line"><span class="comment"># 快速启动app</span></span><br><span class="line">adb shell am start -n 包名</span><br><span class="line"><span class="comment"># 清理缓存</span></span><br><span class="line">adb shell pm clear 包名</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="进阶命令"><a href="#进阶命令" class="headerlink" title="进阶命令"></a>进阶命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设备与电脑传输文件</span></span><br><span class="line">adb push 电脑路径 设备路径   <span class="comment"># 电脑--&gt;设备</span></span><br><span class="line">adb pull 设备路径 电脑路径   <span class="comment"># 设备--&gt;电脑</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看系统日志</span></span><br><span class="line">adb logcat -v time &gt;.\longcat.log</span><br><span class="line"><span class="comment"># 清理日志</span></span><br><span class="line">adb logcat -c</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> adb </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> adb </tag>
-            
-            <tag> android </tag>
+            <tag> requests </tag>
             
         </tags>
       
@@ -437,6 +410,33 @@
             <tag> linux </tag>
             
             <tag> bash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>adb</title>
+      <link href="/2022/01/15/2022-1-15-adb/"/>
+      <url>/2022/01/15/2022-1-15-adb/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Adb环境搭建准备"><a href="#Adb环境搭建准备" class="headerlink" title="Adb环境搭建准备"></a>Adb环境搭建准备</h3><h4 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h4><h4 id="安装SDK"><a href="#安装SDK" class="headerlink" title="安装SDK"></a>安装SDK</h4><h4 id="验证环境"><a href="#验证环境" class="headerlink" title="验证环境"></a>验证环境</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb version</span><br></pre></td></tr></table></figure><h4 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h4><h5 id="模拟器"><a href="#模拟器" class="headerlink" title="模拟器"></a>模拟器</h5><ul><li>根据模拟器提供的官方文档进行adb连接</li></ul><h5 id="真机"><a href="#真机" class="headerlink" title="真机"></a>真机</h5><ul><li>usb</li><li>开启开发者模式</li><li>删除手机助手类软件</li></ul><h3 id="adb基础"><a href="#adb基础" class="headerlink" title="adb基础"></a>adb基础</h3><h4 id="adb介绍"><a href="#adb介绍" class="headerlink" title="adb介绍"></a>adb介绍</h4><blockquote><p>全称android debug bridge，安卓调试桥，是android环境提供的命令行工具，用户可以通过adb在电脑上对Android设备进行全面操作，比如安装和调试应用，操作文件的传输等</p></blockquote><h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重启服务</span></span><br><span class="line">adb kill-server</span><br><span class="line">adb start-server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看设备状态</span></span><br><span class="line">adb devices    <span class="comment"># device正常；offline设备无响应；unauthorized未授权</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装应用</span></span><br><span class="line">adb install 包路径</span><br><span class="line">adb install -r 包路径   <span class="comment"># 覆盖安装</span></span><br><span class="line">adb -s 设备名 install 包路径  <span class="comment"># 指定设备安装</span></span><br><span class="line"><span class="comment"># 卸载应用</span></span><br><span class="line">adb uninstall 包路径</span><br><span class="line">adb uninstall -k 包路径    <span class="comment"># 卸载包不删除配置文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取当前已打开的应用包名</span></span><br><span class="line">adb shell dumpsys window w |grep \/ |grep name=</span><br><span class="line"><span class="comment"># 快速启动app</span></span><br><span class="line">adb shell am start -n 包名</span><br><span class="line"><span class="comment"># 清理缓存</span></span><br><span class="line">adb shell pm clear 包名</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="进阶命令"><a href="#进阶命令" class="headerlink" title="进阶命令"></a>进阶命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设备与电脑传输文件</span></span><br><span class="line">adb push 电脑路径 设备路径   <span class="comment"># 电脑--&gt;设备</span></span><br><span class="line">adb pull 设备路径 电脑路径   <span class="comment"># 设备--&gt;电脑</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看系统日志</span></span><br><span class="line">adb logcat -v time &gt;.\longcat.log</span><br><span class="line"><span class="comment"># 清理日志</span></span><br><span class="line">adb logcat -c</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> adb </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> adb </tag>
+            
+            <tag> android </tag>
             
         </tags>
       
@@ -584,7 +584,7 @@
       <link href="/2022/01/07/git/"/>
       <url>/2022/01/07/git/</url>
       
-        <content type="html"><![CDATA[<h4 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mac安装：</span></span><br><span class="line">brew intasll git</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">git --version</span><br><span class="line"><span class="comment"># git配置用户名、邮箱</span></span><br><span class="line">git config --global user.name <span class="string">&quot;yanxiaokang&quot;</span></span><br><span class="line">git config --global user.mail <span class="string">&quot;yanxiaokang1993@163.com&quot;</span></span><br><span class="line"><span class="comment"># 验证配置</span></span><br><span class="line">git config --global --list</span><br><span class="line"><span class="comment"># ssh秘钥生成</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;yanxiaokang1993@163.com&quot;</span></span><br><span class="line"><span class="comment"># 生成秘钥路径</span></span><br><span class="line"><span class="built_in">cd</span> /Users/yanxiaokang/.ssh</span><br><span class="line">id_rsa.pub  <span class="comment">#公钥配置到git</span></span><br><span class="line">id_rsa  <span class="comment">#私钥</span></span><br></pre></td></tr></table></figure><h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 当前目录创建仓库</span></span><br><span class="line">git init</span><br><span class="line"><span class="comment"># 提交文件至临时仓库</span></span><br><span class="line">git add 文件名</span><br><span class="line"><span class="comment">#当前目录全部文件添加至临时仓库</span></span><br><span class="line">git add . </span><br><span class="line"><span class="comment"># 提交备注并提交到仓库</span></span><br><span class="line">git commit -m ’xxx‘</span><br><span class="line"><span class="comment"># 查看当前git状态</span></span><br><span class="line">git status</span><br><span class="line"><span class="comment"># 查看修改前后对比</span></span><br><span class="line">git diff</span><br><span class="line"><span class="comment"># 未add之前还原到上一次修改</span></span><br><span class="line">git checkout 文件名</span><br><span class="line"><span class="comment"># 已add之后，把文件从临时仓库删除，再使用checkout还原工作区</span></span><br><span class="line">git reset HEAD 文件名</span><br><span class="line"><span class="comment"># 返回到上一次commit的版本</span></span><br><span class="line">git reset --hard HEAD</span><br></pre></td></tr></table></figure><h4 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 建立远程连接</span></span><br><span class="line">git remote add origin xxx</span><br><span class="line"><span class="comment"># 首次推送至远程仓库，之后只需要 git push</span></span><br><span class="line">git push -u origin master</span><br><span class="line"><span class="comment"># 首次强制推送</span></span><br><span class="line">git push -f -u origin master</span><br><span class="line"><span class="comment"># 合并commit提交记录</span></span><br><span class="line">git rebase -i commit名</span><br><span class="line"><span class="comment"># 修改远程仓库</span></span><br><span class="line">git remote rm origin <span class="comment"># 删除原有远程仓库</span></span><br><span class="line">git remote add origin url <span class="comment"># 添加新的远程仓库</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> url</span><br></pre></td></tr></table></figure><h4 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建分支</span></span><br><span class="line">git branch 分支名</span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout 分支名</span><br><span class="line"><span class="comment"># 创建并切换</span></span><br><span class="line">git checkout -b 分支名</span><br><span class="line"><span class="comment"># 查看分支</span></span><br><span class="line">git branch</span><br><span class="line"><span class="comment"># 将远程仓库更新至本地仓库</span></span><br><span class="line">git pull</span><br><span class="line"><span class="comment"># 合并分支</span></span><br><span class="line">git merge 分支名</span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h4 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mac安装：</span></span><br><span class="line">brew intasll git</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">git --version</span><br><span class="line"><span class="comment"># git配置用户名、邮箱</span></span><br><span class="line">git config --global user.name <span class="string">&quot;yanxiaokang&quot;</span></span><br><span class="line">git config --global user.mail <span class="string">&quot;yanxiaokang1993@163.com&quot;</span></span><br><span class="line"><span class="comment"># 验证配置</span></span><br><span class="line">git config --global --list</span><br><span class="line"><span class="comment"># ssh秘钥生成</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;yanxiaokang1993@163.com&quot;</span></span><br><span class="line"><span class="comment"># 生成秘钥路径</span></span><br><span class="line"><span class="built_in">cd</span> /Users/yanxiaokang/.ssh</span><br><span class="line">id_rsa.pub  <span class="comment">#公钥配置到git</span></span><br><span class="line">id_rsa  <span class="comment">#私钥</span></span><br></pre></td></tr></table></figure><h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 当前目录创建仓库</span></span><br><span class="line">git init</span><br><span class="line"><span class="comment"># 提交文件至临时仓库</span></span><br><span class="line">git add 文件名</span><br><span class="line"><span class="comment">#当前目录全部文件添加至临时仓库</span></span><br><span class="line">git add . </span><br><span class="line"><span class="comment"># 提交备注并提交到仓库</span></span><br><span class="line">git commit -m ’xxx‘</span><br><span class="line"><span class="comment"># 查看当前git状态</span></span><br><span class="line">git status</span><br><span class="line"><span class="comment"># 查看修改前后对比</span></span><br><span class="line">git diff</span><br><span class="line"><span class="comment"># 未add之前还原到上一次修改</span></span><br><span class="line">git checkout 文件名</span><br><span class="line"><span class="comment"># 已add之后，把文件从临时仓库删除，再使用checkout还原工作区</span></span><br><span class="line">git reset HEAD 文件名</span><br><span class="line"><span class="comment"># 返回到上一次commit的版本</span></span><br><span class="line">git reset --hard HEAD</span><br></pre></td></tr></table></figure><h4 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 建立远程连接</span></span><br><span class="line">git remote add origin xxx</span><br><span class="line"><span class="comment"># 首次推送至远程仓库，之后只需要 git push</span></span><br><span class="line">git push -u origin master</span><br><span class="line"><span class="comment"># 首次强制推送</span></span><br><span class="line">git push -f -u origin master</span><br><span class="line"><span class="comment"># 合并commit提交记录</span></span><br><span class="line">git rebase -i commit名</span><br><span class="line"><span class="comment"># 修改远程仓库</span></span><br><span class="line">git remote rm origin <span class="comment"># 删除原有远程仓库</span></span><br><span class="line">git remote add origin url <span class="comment"># 添加新的远程仓库</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> url</span><br><span class="line"></span><br><span class="line"><span class="comment"># 同步远程仓库</span></span><br><span class="line">git pull</span><br></pre></td></tr></table></figure><h4 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建分支</span></span><br><span class="line">git branch 分支名</span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">git checkout 分支名</span><br><span class="line"><span class="comment"># 创建并切换</span></span><br><span class="line">git checkout -b 分支名</span><br><span class="line"><span class="comment"># 查看分支</span></span><br><span class="line">git branch</span><br><span class="line"><span class="comment"># 将远程仓库更新至本地仓库</span></span><br><span class="line">git pull</span><br><span class="line"><span class="comment"># 合并分支</span></span><br><span class="line">git merge 分支名</span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure><h4 id="git-pull-遇到错误：error-Your-local-changes-to-the-following-files-would-be-overwritten-by-merge"><a href="#git-pull-遇到错误：error-Your-local-changes-to-the-following-files-would-be-overwritten-by-merge" class="headerlink" title="git pull 遇到错误：error: Your local changes to the following files would be overwritten by merge:"></a>git pull 遇到错误：error: Your local changes to the following files would be overwritten by merge:</h4><p>原因：本地代码与远程不一致</p><p>解决1:想保留本地代码如果你想保留刚才本地修改的代码，并把git服务器上的代码pull到本地（本地刚才修改的代码将会被暂时封存起来）：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br><span class="line">git pull origin master</span><br><span class="line">git stash pop</span><br></pre></td></tr></table></figure><p>解决2:如果你想完全地覆盖本地的代码，只保留服务器端代码，则直接回退到上一个版本，再进行pull</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard</span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -597,6 +597,33 @@
         <tags>
             
             <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试平台-后端基础</title>
+      <link href="/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+      <url>/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h4 id="后端开发主要技术点"><a href="#后端开发主要技术点" class="headerlink" title="后端开发主要技术点"></a>后端开发主要技术点</h4><ul><li>页面渲染：客户端渲染页面(SPA)、服务端渲染页面(模板技术)</li><li>数据库连接：数据连接池、数据访问</li><li>服务管理：接口、路由、权限</li><li>异步任务调度：异步、同步、回调</li></ul><h4 id="后端开发框架"><a href="#后端开发框架" class="headerlink" title="后端开发框架"></a>后端开发框架</h4><h6 id="迷你型框架：flask"><a href="#迷你型框架：flask" class="headerlink" title="迷你型框架：flask"></a>迷你型框架：flask</h6><h6 id="大而全框架：django"><a href="#大而全框架：django" class="headerlink" title="大而全框架：django"></a>大而全框架：django</h6><h4 id="flask框架"><a href="#flask框架" class="headerlink" title="flask框架"></a>flask框架</h4><h5 id="flask中文文档：https-dormousehole-readthedocs-io-en-latest"><a href="#flask中文文档：https-dormousehole-readthedocs-io-en-latest" class="headerlink" title="flask中文文档：https://dormousehole.readthedocs.io/en/latest/"></a>flask中文文档：<a href="https://dormousehole.readthedocs.io/en/latest/">https://dormousehole.readthedocs.io/en/latest/</a></h5><ul><li>路由：get、post</li><li>请求：get、form、json、cookie、path</li><li>响应：json、cookie</li><li>session：基于cookie的session机制</li><li>模板技术：不推荐学习，直接客户端渲染页面即可（SPA）</li></ul><h4 id="数据持久化技术"><a href="#数据持久化技术" class="headerlink" title="数据持久化技术"></a>数据持久化技术</h4><ul><li>传统数据库连接方式：pymysql库</li><li>ORM模型：sqlalchemy</li></ul><h4 id="跨平台api对接"><a href="#跨平台api对接" class="headerlink" title="跨平台api对接"></a>跨平台api对接</h4><h5 id="调度平台-jenkins"><a href="#调度平台-jenkins" class="headerlink" title="调度平台-jenkins"></a>调度平台-jenkins</h5><ul><li>通过python-jenjinsapi来操作jenkins的任务</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试平台开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> flask </tag>
+            
+            <tag> python3 </tag>
             
         </tags>
       
@@ -624,33 +651,6 @@
             <tag> python3 </tag>
             
             <tag> Vue.js </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>测试平台-后端基础</title>
-      <link href="/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-      <url>/2021/12/17/2021-12-17-%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0-%E5%90%8E%E7%AB%AF%E5%9F%BA%E7%A1%80/</url>
-      
-        <content type="html"><![CDATA[<h4 id="后端开发主要技术点"><a href="#后端开发主要技术点" class="headerlink" title="后端开发主要技术点"></a>后端开发主要技术点</h4><ul><li>页面渲染：客户端渲染页面(SPA)、服务端渲染页面(模板技术)</li><li>数据库连接：数据连接池、数据访问</li><li>服务管理：接口、路由、权限</li><li>异步任务调度：异步、同步、回调</li></ul><h4 id="后端开发框架"><a href="#后端开发框架" class="headerlink" title="后端开发框架"></a>后端开发框架</h4><h6 id="迷你型框架：flask"><a href="#迷你型框架：flask" class="headerlink" title="迷你型框架：flask"></a>迷你型框架：flask</h6><h6 id="大而全框架：django"><a href="#大而全框架：django" class="headerlink" title="大而全框架：django"></a>大而全框架：django</h6><h4 id="flask框架"><a href="#flask框架" class="headerlink" title="flask框架"></a>flask框架</h4><h5 id="flask中文文档：https-dormousehole-readthedocs-io-en-latest"><a href="#flask中文文档：https-dormousehole-readthedocs-io-en-latest" class="headerlink" title="flask中文文档：https://dormousehole.readthedocs.io/en/latest/"></a>flask中文文档：<a href="https://dormousehole.readthedocs.io/en/latest/">https://dormousehole.readthedocs.io/en/latest/</a></h5><ul><li>路由：get、post</li><li>请求：get、form、json、cookie、path</li><li>响应：json、cookie</li><li>session：基于cookie的session机制</li><li>模板技术：不推荐学习，直接客户端渲染页面即可（SPA）</li></ul><h4 id="数据持久化技术"><a href="#数据持久化技术" class="headerlink" title="数据持久化技术"></a>数据持久化技术</h4><ul><li>传统数据库连接方式：pymysql库</li><li>ORM模型：sqlalchemy</li></ul><h4 id="跨平台api对接"><a href="#跨平台api对接" class="headerlink" title="跨平台api对接"></a>跨平台api对接</h4><h5 id="调度平台-jenkins"><a href="#调度平台-jenkins" class="headerlink" title="调度平台-jenkins"></a>调度平台-jenkins</h5><ul><li>通过python-jenjinsapi来操作jenkins的任务</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> 测试平台开发 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> python3 </tag>
-            
-            <tag> flask </tag>
             
         </tags>
       
@@ -700,11 +700,11 @@
       
         <tags>
             
+            <tag> flask </tag>
+            
             <tag> python3 </tag>
             
             <tag> Vue.js </tag>
-            
-            <tag> flask </tag>
             
         </tags>
       
